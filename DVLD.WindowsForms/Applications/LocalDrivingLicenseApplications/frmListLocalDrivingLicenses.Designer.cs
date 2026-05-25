@@ -410,6 +410,7 @@
             this.dgvLocalDrivingLicenseApplication.ThemeStyle.RowsStyle.Height = 22;
             this.dgvLocalDrivingLicenseApplication.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvLocalDrivingLicenseApplication.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvLocalDrivingLicenseApplication.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvLocalDrivingLicenseApplication_CellMouseDown);
             // 
             // frmListLocalDrivingLicenses
             // 
