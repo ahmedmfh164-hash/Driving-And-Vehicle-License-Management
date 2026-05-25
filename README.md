@@ -300,7 +300,8 @@ Start Debugging
 
 
 ## Manage People
-<img width="366" height="158" alt="Screenshot 2026-05-25 172715" src="https://github.com/user-attachments/assets/3963698a-9a39-4f7b-a90d-05c3616bc939" />
+<img width="366" height="158" alt="Screenshot 2026-05-25 181251" src="https://github.com/user-attachments/assets/49a7a24f-d476-42eb-8a71-fddbd6659c37" />
+
 
 ## Drivers
 <img width="300" height="156" alt="Screenshot 2026-05-25 172741" src="https://github.com/user-attachments/assets/01828a19-12f4-4629-85c7-251868556809" />
