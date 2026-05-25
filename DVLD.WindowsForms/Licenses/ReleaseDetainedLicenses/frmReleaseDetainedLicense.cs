@@ -1,4 +1,5 @@
 ﻿using DVLD.Business;
+using DVLD.Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -95,12 +96,12 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             clsApplicationTypesBusiness AppType = clsApplicationTypesBusiness.FindApplicationTypeByApplicationTypeID(5);
 
             lblDetainDate.Text=DateTime.Now.ToShortDateString();
-            lblCreatedBy.Text=Properties.Settings.Default.UserName;
+            lblCreatedBy.Text=clsUserInfo.Username;
             lblApplcationDate.Text =DateTime.Now.ToShortDateString();
             lblApplicationFees.Text = AppType.ApplicationFees.ToString();
         }
 
-        private void btnRelase_Click(object sender, EventArgs e)
+        private void btnRelease_Click(object sender, EventArgs e)
         {
 
             if (_License.IsActive==false)
@@ -113,7 +114,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 return;
 
 
-            if (_License.ReleaseDetainedLicense(clsUserBusiness.FindUserByUserName(Properties.Settings.Default.UserName)._UserID, ref _ReleasedApplicationID))
+            if (_License.ReleaseDetainedLicense(clsUserInfo.UserID, ref _ReleasedApplicationID))
             {
                 MessageBox.Show("Detained Licensed Released Successfully.", "Detained License Released", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -124,8 +125,6 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             }
             else
                 MessageBox.Show("Data Is not Saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
 
 
         }

@@ -184,8 +184,8 @@
             this.txtbLicenseID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbLicenseID.FillColor = System.Drawing.Color.DarkSlateGray;
             this.txtbLicenseID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbLicenseID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtbLicenseID.ForeColor = System.Drawing.Color.Black;
+            this.txtbLicenseID.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbLicenseID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtbLicenseID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbLicenseID.Location = new System.Drawing.Point(193, 32);
             this.txtbLicenseID.Name = "txtbLicenseID";
@@ -513,6 +513,7 @@
             // 
             this.llblShowLicenseInfo.AutoSize = true;
             this.llblShowLicenseInfo.Font = new System.Drawing.Font("Snap ITC", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llblShowLicenseInfo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.llblShowLicenseInfo.Location = new System.Drawing.Point(255, 640);
             this.llblShowLicenseInfo.Name = "llblShowLicenseInfo";
             this.llblShowLicenseInfo.Size = new System.Drawing.Size(183, 19);
@@ -525,6 +526,7 @@
             // 
             this.llblShowKicenseHistory.AutoSize = true;
             this.llblShowKicenseHistory.Font = new System.Drawing.Font("Snap ITC", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llblShowKicenseHistory.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.llblShowKicenseHistory.Location = new System.Drawing.Point(28, 640);
             this.llblShowKicenseHistory.Name = "llblShowKicenseHistory";
             this.llblShowKicenseHistory.Size = new System.Drawing.Size(217, 19);
@@ -552,7 +554,7 @@
             this.btnRelease.Size = new System.Drawing.Size(195, 47);
             this.btnRelease.TabIndex = 68;
             this.btnRelease.Text = "Release";
-            this.btnRelease.Click += new System.EventHandler(this.btnRelase_Click);
+            this.btnRelease.Click += new System.EventHandler(this.btnRelease_Click);
             // 
             // btnClose
             // 
@@ -596,6 +598,7 @@
             this.Controls.Add(this.llblShowKicenseHistory);
             this.Controls.Add(this.btnRelease);
             this.Controls.Add(this.btnClose);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "frmReleaseDetainedLicense";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmReleaseDetainedLicense";

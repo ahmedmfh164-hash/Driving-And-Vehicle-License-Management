@@ -79,6 +79,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         {
             frmDetainLicense frm = new frmDetainLicense();
             frm.ShowDialog();
+            _RefreshDetainedLicenses();
         }
 
         private void btnRelease_Click(object sender, EventArgs e)

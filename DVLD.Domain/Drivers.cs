@@ -8,8 +8,6 @@ namespace DVLD.Domain
 {
     public class clsDrivers
     {
-        public enum enMode { AddNew, Update };
-        public enMode _Mode = enMode.AddNew;
         public int Person_ID { get; set; }
         public string National_No { get; set; }
         public int CreatedByUser_ID { get; set; }

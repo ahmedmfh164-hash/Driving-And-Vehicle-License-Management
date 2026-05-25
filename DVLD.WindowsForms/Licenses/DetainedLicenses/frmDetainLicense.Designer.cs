@@ -32,41 +32,41 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDetainLicense));
             this.ucDriverLicenseInfo1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCDriverLicenseInfo();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtbFineFees = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblLicenseID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblCreatedBy = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lblDetainDate = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.lblDetainID = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.llblShowLicenseInfo = new System.Windows.Forms.LinkLabel();
             this.llblShowKicenseHistory = new System.Windows.Forms.LinkLabel();
             this.gbFilter = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.txtbLicenseID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtbLicenseID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtbFineFees = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnDetain = new Guna.UI2.WinForms.Guna2GradientButton();
             this.groupBox1.SuspendLayout();
-            this.gbFilter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.gbFilter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // ucDriverLicenseInfo1
@@ -100,6 +100,52 @@
             this.groupBox1.TabIndex = 68;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Application New License Info";
+            // 
+            // txtbFineFees
+            // 
+            this.txtbFineFees.BorderColor = System.Drawing.Color.Black;
+            this.txtbFineFees.BorderThickness = 2;
+            this.txtbFineFees.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbFineFees.DefaultText = "";
+            this.txtbFineFees.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbFineFees.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbFineFees.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbFineFees.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbFineFees.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.txtbFineFees.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbFineFees.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbFineFees.ForeColor = System.Drawing.Color.White;
+            this.txtbFineFees.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbFineFees.Location = new System.Drawing.Point(225, 86);
+            this.txtbFineFees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbFineFees.Name = "txtbFineFees";
+            this.txtbFineFees.PlaceholderText = "";
+            this.txtbFineFees.SelectedText = "";
+            this.txtbFineFees.Size = new System.Drawing.Size(114, 30);
+            this.txtbFineFees.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtbFineFees.TabIndex = 74;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.LocalDriving_License;
+            this.pictureBox4.Location = new System.Drawing.Point(616, 21);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 233;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.User_32__2;
+            this.pictureBox5.Location = new System.Drawing.Point(616, 52);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 231;
+            this.pictureBox5.TabStop = false;
             // 
             // lblLicenseID
             // 
@@ -145,6 +191,17 @@
             this.label14.TabIndex = 222;
             this.label14.Text = "Created By:";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.money_32;
+            this.pictureBox7.Location = new System.Drawing.Point(187, 86);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 219;
+            this.pictureBox7.TabStop = false;
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -155,6 +212,17 @@
             this.label22.Size = new System.Drawing.Size(111, 20);
             this.label22.TabIndex = 205;
             this.label22.Text = "Detain Date:";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Detained_Driving_License_321;
+            this.pictureBox14.Location = new System.Drawing.Point(188, 23);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 218;
+            this.pictureBox14.TabStop = false;
             // 
             // label5
             // 
@@ -177,6 +245,17 @@
             this.lblDetainDate.Size = new System.Drawing.Size(53, 20);
             this.lblDetainDate.TabIndex = 208;
             this.lblDetainDate.Text = "[????]";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox18.Location = new System.Drawing.Point(187, 54);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 215;
+            this.pictureBox18.TabStop = false;
             // 
             // lblDetainID
             // 
@@ -240,6 +319,58 @@
             this.gbFilter.TabStop = false;
             this.gbFilter.Text = "Filter";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearch.FillColor = System.Drawing.Color.DimGray;
+            this.btnSearch.FillColor2 = System.Drawing.Color.DarkBlue;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Blue;
+            this.btnSearch.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.License_View_32;
+            this.btnSearch.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnSearch.Location = new System.Drawing.Point(628, 23);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(91, 47);
+            this.btnSearch.TabIndex = 68;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtbLicenseID
+            // 
+            this.txtbLicenseID.BorderThickness = 2;
+            this.txtbLicenseID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbLicenseID.DefaultText = "";
+            this.txtbLicenseID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbLicenseID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbLicenseID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbLicenseID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbLicenseID.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.txtbLicenseID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbLicenseID.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbLicenseID.ForeColor = System.Drawing.Color.White;
+            this.txtbLicenseID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbLicenseID.Location = new System.Drawing.Point(224, 29);
+            this.txtbLicenseID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbLicenseID.Name = "txtbLicenseID";
+            this.txtbLicenseID.PlaceholderText = "";
+            this.txtbLicenseID.SelectedText = "";
+            this.txtbLicenseID.Size = new System.Drawing.Size(346, 36);
+            this.txtbLicenseID.TabIndex = 8;
+            this.txtbLicenseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbLicenseID_KeyPress);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Lost_Driving_License_32;
+            this.pictureBox1.Location = new System.Drawing.Point(169, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -263,133 +394,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // txtbLicenseID
-            // 
-            this.txtbLicenseID.BorderThickness = 2;
-            this.txtbLicenseID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbLicenseID.DefaultText = "";
-            this.txtbLicenseID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtbLicenseID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtbLicenseID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbLicenseID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbLicenseID.FillColor = System.Drawing.Color.DarkSlateGray;
-            this.txtbLicenseID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbLicenseID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtbLicenseID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbLicenseID.Location = new System.Drawing.Point(224, 29);
-            this.txtbLicenseID.Name = "txtbLicenseID";
-            this.txtbLicenseID.PlaceholderText = "";
-            this.txtbLicenseID.SelectedText = "";
-            this.txtbLicenseID.Size = new System.Drawing.Size(346, 36);
-            this.txtbLicenseID.TabIndex = 8;
-            this.txtbLicenseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbLicenseID_KeyPress);
-            // 
-            // txtbFineFees
-            // 
-            this.txtbFineFees.BorderColor = System.Drawing.Color.Black;
-            this.txtbFineFees.BorderThickness = 2;
-            this.txtbFineFees.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbFineFees.DefaultText = "";
-            this.txtbFineFees.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtbFineFees.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtbFineFees.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbFineFees.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbFineFees.FillColor = System.Drawing.Color.DarkSlateGray;
-            this.txtbFineFees.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbFineFees.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtbFineFees.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbFineFees.Location = new System.Drawing.Point(225, 86);
-            this.txtbFineFees.Name = "txtbFineFees";
-            this.txtbFineFees.PlaceholderText = "";
-            this.txtbFineFees.SelectedText = "";
-            this.txtbFineFees.Size = new System.Drawing.Size(114, 30);
-            this.txtbFineFees.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtbFineFees.TabIndex = 74;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.FillColor = System.Drawing.Color.DimGray;
-            this.btnSearch.FillColor2 = System.Drawing.Color.DarkBlue;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Blue;
-            this.btnSearch.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.License_View_32;
-            this.btnSearch.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnSearch.Location = new System.Drawing.Point(628, 23);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(91, 47);
-            this.btnSearch.TabIndex = 68;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Lost_Driving_License_32;
-            this.pictureBox1.Location = new System.Drawing.Point(169, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.LocalDriving_License;
-            this.pictureBox4.Location = new System.Drawing.Point(616, 21);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 233;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.User_32__2;
-            this.pictureBox5.Location = new System.Drawing.Point(616, 52);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 231;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.money_32;
-            this.pictureBox7.Location = new System.Drawing.Point(187, 86);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 219;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Detained_Driving_License_321;
-            this.pictureBox14.Location = new System.Drawing.Point(188, 23);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 218;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
-            this.pictureBox18.Location = new System.Drawing.Point(187, 54);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 215;
-            this.pictureBox18.TabStop = false;
             // 
             // btnClose
             // 
@@ -454,15 +458,15 @@
             this.Load += new System.EventHandler(this.frmDetainLicense_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbFilter.ResumeLayout(false);
-            this.gbFilter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            this.gbFilter.ResumeLayout(false);
+            this.gbFilter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

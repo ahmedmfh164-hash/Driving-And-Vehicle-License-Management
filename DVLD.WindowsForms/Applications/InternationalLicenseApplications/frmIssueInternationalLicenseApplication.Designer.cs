@@ -32,7 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIssueInternationalLicenseApplication));
             this.label1 = new System.Windows.Forms.Label();
             this.gbFilter = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtbLicenseID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -40,8 +42,6 @@
             this.llblShowKicenseHistory = new System.Windows.Forms.LinkLabel();
             this.llblShowLicenseInfo = new System.Windows.Forms.LinkLabel();
             this.ucNewInterNationalLicense1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCNewInterNationalLicense();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.txtbLicenseID = new Guna.UI2.WinForms.Guna2TextBox();
             this.gbFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -72,6 +72,25 @@
             this.gbFilter.Text = "Filter";
             this.gbFilter.Enter += new System.EventHandler(this.gbFilter_Enter);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearch.FillColor = System.Drawing.Color.DimGray;
+            this.btnSearch.FillColor2 = System.Drawing.Color.DarkBlue;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Blue;
+            this.btnSearch.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.License_View_32;
+            this.btnSearch.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnSearch.Location = new System.Drawing.Point(584, 28);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(91, 47);
+            this.btnSearch.TabIndex = 71;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Lost_Driving_License_32;
@@ -81,6 +100,28 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // txtbLicenseID
+            // 
+            this.txtbLicenseID.BorderThickness = 2;
+            this.txtbLicenseID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbLicenseID.DefaultText = "";
+            this.txtbLicenseID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbLicenseID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbLicenseID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbLicenseID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbLicenseID.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.txtbLicenseID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbLicenseID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbLicenseID.ForeColor = System.Drawing.Color.Black;
+            this.txtbLicenseID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbLicenseID.Location = new System.Drawing.Point(213, 34);
+            this.txtbLicenseID.Name = "txtbLicenseID";
+            this.txtbLicenseID.PlaceholderText = "";
+            this.txtbLicenseID.SelectedText = "";
+            this.txtbLicenseID.Size = new System.Drawing.Size(346, 36);
+            this.txtbLicenseID.TabIndex = 70;
+            this.txtbLicenseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbLicenseID_KeyPress);
             // 
             // label2
             // 
@@ -154,7 +195,7 @@
             // 
             this.llblShowLicenseInfo.AutoSize = true;
             this.llblShowLicenseInfo.Font = new System.Drawing.Font("Snap ITC", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblShowLicenseInfo.Location = new System.Drawing.Point(238, 657);
+            this.llblShowLicenseInfo.Location = new System.Drawing.Point(250, 657);
             this.llblShowLicenseInfo.Name = "llblShowLicenseInfo";
             this.llblShowLicenseInfo.Size = new System.Drawing.Size(183, 19);
             this.llblShowLicenseInfo.TabIndex = 55;
@@ -164,51 +205,11 @@
             // 
             // ucNewInterNationalLicense1
             // 
+            this.ucNewInterNationalLicense1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ucNewInterNationalLicense1.Location = new System.Drawing.Point(8, 169);
             this.ucNewInterNationalLicense1.Name = "ucNewInterNationalLicense1";
             this.ucNewInterNationalLicense1.Size = new System.Drawing.Size(966, 465);
             this.ucNewInterNationalLicense1.TabIndex = 45;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.FillColor = System.Drawing.Color.DimGray;
-            this.btnSearch.FillColor2 = System.Drawing.Color.DarkBlue;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Blue;
-            this.btnSearch.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.License_View_32;
-            this.btnSearch.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnSearch.Location = new System.Drawing.Point(584, 28);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(91, 47);
-            this.btnSearch.TabIndex = 71;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // txtbLicenseID
-            // 
-            this.txtbLicenseID.BorderThickness = 2;
-            this.txtbLicenseID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbLicenseID.DefaultText = "";
-            this.txtbLicenseID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtbLicenseID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtbLicenseID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbLicenseID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbLicenseID.FillColor = System.Drawing.Color.DarkSlateGray;
-            this.txtbLicenseID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbLicenseID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtbLicenseID.ForeColor = System.Drawing.Color.Black;
-            this.txtbLicenseID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbLicenseID.Location = new System.Drawing.Point(213, 34);
-            this.txtbLicenseID.Name = "txtbLicenseID";
-            this.txtbLicenseID.PlaceholderText = "";
-            this.txtbLicenseID.SelectedText = "";
-            this.txtbLicenseID.Size = new System.Drawing.Size(346, 36);
-            this.txtbLicenseID.TabIndex = 70;
-            this.txtbLicenseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbLicenseID_KeyPress);
             // 
             // frmIssueInternationalLicenseApplication
             // 

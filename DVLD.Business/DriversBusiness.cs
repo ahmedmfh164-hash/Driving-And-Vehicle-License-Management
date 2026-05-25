@@ -20,7 +20,6 @@ namespace DVLD.Business
             this.Driver_ID=-1;
             this.Created_Date = DateTime.Now;
             this.CreatedByUser_ID=-1;
-            _Mode=enMode.AddNew;
         }
 
         private clsDriversBusiness(int DriverID, int PersonID,string FullName,
@@ -34,7 +33,6 @@ namespace DVLD.Business
             Created_Date = CreatedDate;
             CreatedByUser_ID=CreatedByUserID;
 
-            _Mode=enMode.Update;
         }
 
 
@@ -44,12 +42,6 @@ namespace DVLD.Business
             return (this.Driver_ID!=-1);
         }
 
-       /* private bool _UpdateDriver()
-        {
-            return clsPeopleAccess.UpdatePerson(this.Person_ID, this.National_No, this.Full_Name, this._SecondName, this._ThirdName
-                , this._LastName, this.Created_Date, this._Gender, this.Driver_ID, this._Phone, this._Email, this.CreatedByUser_ID, this.NumberOf_ActiveLicenses);
-        }
-*/
 
         public static DataTable GetAllDrivers()
         {
@@ -161,20 +153,12 @@ namespace DVLD.Business
 
         public bool Save()
         {
-            switch (_Mode)
-            {
-                case enMode.AddNew:
-                    if (_AddNewDriver())
-                    {
-                        _Mode=enMode.Update;
-                        return true;
-                    }
-                    break;
-                case enMode.Update:
-                 //   return _UpdatePerson();
-                    break;
 
+            if (_AddNewDriver())
+            {
+                return true;
             }
+
 
             return false;
         }
