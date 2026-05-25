@@ -32,13 +32,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (dgvDetainedLicenses.Rows.Count > 0)
             {
                 dgvDetainedLicenses.Columns[0].HeaderText="D.ID";
-                dgvDetainedLicenses.Columns[0].Width = 80;
+                dgvDetainedLicenses.Columns[0].Width = 60;
 
                 dgvDetainedLicenses.Columns[1].HeaderText="L ID";
-                dgvDetainedLicenses.Columns[1].Width = 80;
+                dgvDetainedLicenses.Columns[1].Width = 60;
 
                 dgvDetainedLicenses.Columns[2].HeaderText="N.No.";
-                dgvDetainedLicenses.Columns[2].Width = 80;
+                dgvDetainedLicenses.Columns[2].Width = 60;
 
                 dgvDetainedLicenses.Columns[3].HeaderText="Full Name";
                 dgvDetainedLicenses.Columns[3].Width = 200;
@@ -56,7 +56,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 dgvDetainedLicenses.Columns[7].Width = 80;
 
                 dgvDetainedLicenses.Columns[8].HeaderText="Is Released";
-                dgvDetainedLicenses.Columns[8].Width = 80;
+                dgvDetainedLicenses.Columns[8].Width = 100;
             }
 
             lblDetainedLicensesRecords.Text=dgvDetainedLicenses.Rows.Count.ToString();

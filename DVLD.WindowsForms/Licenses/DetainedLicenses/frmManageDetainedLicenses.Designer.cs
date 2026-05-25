@@ -120,7 +120,7 @@
             // 
             this.lblDetainedLicensesRecords.AutoSize = true;
             this.lblDetainedLicensesRecords.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDetainedLicensesRecords.Location = new System.Drawing.Point(104, 603);
+            this.lblDetainedLicensesRecords.Location = new System.Drawing.Point(104, 618);
             this.lblDetainedLicensesRecords.Name = "lblDetainedLicensesRecords";
             this.lblDetainedLicensesRecords.Size = new System.Drawing.Size(19, 13);
             this.lblDetainedLicensesRecords.TabIndex = 182;
@@ -131,7 +131,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(10, 598);
+            this.label5.Location = new System.Drawing.Point(10, 613);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 20);
             this.label5.TabIndex = 181;
@@ -153,7 +153,7 @@
             this.btnRelease.BackgroundImage = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Release_Detained_License_641;
             this.btnRelease.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRelease.FlatAppearance.BorderSize = 0;
-            this.btnRelease.Location = new System.Drawing.Point(1004, 233);
+            this.btnRelease.Location = new System.Drawing.Point(1046, 233);
             this.btnRelease.Name = "btnRelease";
             this.btnRelease.Size = new System.Drawing.Size(63, 58);
             this.btnRelease.TabIndex = 188;
@@ -165,7 +165,7 @@
             this.btnDetainLicense.BackgroundImage = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Detain_642;
             this.btnDetainLicense.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDetainLicense.FlatAppearance.BorderSize = 0;
-            this.btnDetainLicense.Location = new System.Drawing.Point(1087, 233);
+            this.btnDetainLicense.Location = new System.Drawing.Point(1129, 233);
             this.btnDetainLicense.Name = "btnDetainLicense";
             this.btnDetainLicense.Size = new System.Drawing.Size(63, 58);
             this.btnDetainLicense.TabIndex = 187;
@@ -271,7 +271,7 @@
             this.guna2GradientButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton1.Image")));
             this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton1.ImageSize = new System.Drawing.Size(36, 36);
-            this.guna2GradientButton1.Location = new System.Drawing.Point(958, 603);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(1002, 603);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(195, 47);
             this.guna2GradientButton1.TabIndex = 192;
@@ -316,7 +316,7 @@
             this.dgvDetainedLicenses.ReadOnly = true;
             this.dgvDetainedLicenses.RowHeadersVisible = false;
             this.dgvDetainedLicenses.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvDetainedLicenses.Size = new System.Drawing.Size(1138, 293);
+            this.dgvDetainedLicenses.Size = new System.Drawing.Size(1185, 293);
             this.dgvDetainedLicenses.TabIndex = 193;
             this.dgvDetainedLicenses.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.dgvDetainedLicenses.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -346,7 +346,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1165, 663);
+            this.ClientSize = new System.Drawing.Size(1209, 663);
             this.Controls.Add(this.dgvDetainedLicenses);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.txtFilterBy);

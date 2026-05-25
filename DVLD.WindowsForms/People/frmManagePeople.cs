@@ -339,6 +339,12 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         {
             txbDigits_KeyPress(sender, e);
         }
+
+        private void btnFindPerson_Click(object sender, EventArgs e)
+        {
+            frmFindPerson frm=new frmFindPerson();
+            frm.ShowDialog();
+        }
     }
 
 }
