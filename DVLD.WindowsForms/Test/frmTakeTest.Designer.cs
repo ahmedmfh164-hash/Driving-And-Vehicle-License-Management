@@ -299,7 +299,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox7.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox7.Location = new System.Drawing.Point(142, 348);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 28);
@@ -319,7 +319,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Person_32;
+            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.aa;
             this.pictureBox5.Location = new System.Drawing.Point(143, 269);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(32, 28);

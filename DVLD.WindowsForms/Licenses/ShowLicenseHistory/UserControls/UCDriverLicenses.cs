@@ -15,12 +15,6 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
     {
         private int _PersonID;
 
-        public UCDriverLicenses(int PersonID)
-        {
-            InitializeComponent();
-            _PersonID = PersonID;
-        }
-
         public UCDriverLicenses()
         {
             InitializeComponent();

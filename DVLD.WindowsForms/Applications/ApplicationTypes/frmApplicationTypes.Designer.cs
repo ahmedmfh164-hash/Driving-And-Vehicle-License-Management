@@ -50,7 +50,7 @@
             // 
             this.lblCountRecords.AutoSize = true;
             this.lblCountRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountRecords.Location = new System.Drawing.Point(111, 605);
+            this.lblCountRecords.Location = new System.Drawing.Point(111, 638);
             this.lblCountRecords.Name = "lblCountRecords";
             this.lblCountRecords.Size = new System.Drawing.Size(122, 18);
             this.lblCountRecords.TabIndex = 18;
@@ -60,7 +60,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 605);
+            this.label3.Location = new System.Drawing.Point(12, 638);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 18);
             this.label3.TabIndex = 17;
@@ -69,11 +69,11 @@
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(216, 226);
+            this.label.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(213, 226);
             this.label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(382, 37);
+            this.label.Size = new System.Drawing.Size(440, 45);
             this.label.TabIndex = 12;
             this.label.Text = "Manage Application Types";
             // 
@@ -120,7 +120,7 @@
             this.guna2GradientButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton1.Image")));
             this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton1.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2GradientButton1.Location = new System.Drawing.Point(616, 605);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(656, 625);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(146, 40);
             this.guna2GradientButton1.TabIndex = 28;
@@ -159,13 +159,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvApplicationTypes.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvApplicationTypes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.dgvApplicationTypes.Location = new System.Drawing.Point(14, 286);
+            this.dgvApplicationTypes.Location = new System.Drawing.Point(9, 307);
             this.dgvApplicationTypes.MultiSelect = false;
             this.dgvApplicationTypes.Name = "dgvApplicationTypes";
             this.dgvApplicationTypes.ReadOnly = true;
             this.dgvApplicationTypes.RowHeadersVisible = false;
             this.dgvApplicationTypes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvApplicationTypes.Size = new System.Drawing.Size(762, 312);
+            this.dgvApplicationTypes.Size = new System.Drawing.Size(793, 312);
             this.dgvApplicationTypes.TabIndex = 29;
             this.dgvApplicationTypes.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.dgvApplicationTypes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -195,7 +195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(793, 654);
+            this.ClientSize = new System.Drawing.Size(819, 682);
             this.Controls.Add(this.dgvApplicationTypes);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.lblCountRecords);

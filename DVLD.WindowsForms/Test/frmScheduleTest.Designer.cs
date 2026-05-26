@@ -157,10 +157,11 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Number_32;
+            this.pictureBox10.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.AppID;
             this.pictureBox10.Location = new System.Drawing.Point(141, 55);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 35;
             this.pictureBox10.TabStop = false;
             // 
@@ -277,11 +278,11 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox7.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox7.Location = new System.Drawing.Point(115, 361);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 29;
             this.pictureBox7.TabStop = false;
             // 
@@ -297,8 +298,8 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Person_32;
-            this.pictureBox5.Location = new System.Drawing.Point(116, 282);
+            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.aa;
+            this.pictureBox5.Location = new System.Drawing.Point(116, 280);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(32, 28);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

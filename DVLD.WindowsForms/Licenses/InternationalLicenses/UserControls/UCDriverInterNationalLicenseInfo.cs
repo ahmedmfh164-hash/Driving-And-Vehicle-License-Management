@@ -54,9 +54,9 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (string.IsNullOrEmpty(Person._ImagePath)||!File.Exists(Person._ImagePath))
             {
                 if (Person._Gender.ToLower()=="male")
-                    pbPersonImage.Image=Resources.male;
+                    pbPersonImage.Image=Resources.Male11;
                 else
-                    pbPersonImage.Image = Resources.female;
+                    pbPersonImage.Image = Resources.Female1;
             }
             else
                 pbPersonImage.ImageLocation=Person._ImagePath;

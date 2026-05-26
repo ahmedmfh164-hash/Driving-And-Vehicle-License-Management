@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnNext.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAWlJREFUWEft
+        ltGNwjAMhhnlRmGUDkHRPd4mFb1BGCPwdKOA/sY/RG4SO+m9IPWTIkHS2r8T2+nhsPNJfE/h63wJP+N8
+        u47z7SHjL477dPoNR/3OvyBOF2f4jQFnEIQxzmGAABG2PKNtdBGNR6Pe6OSdZVfwW6+7gcMY9X3SaxbJ
+        UfWJkCgeVtQ8Aj1P4tF0iIjbbkfuccCd0PNFaFTPl7C2+p0TYdBrWVoSjlgiJJ/soCT6q573YImAXTOw
+        WMv22ZeoiXDZbjqrAiUR7KDp3Irciz3kRLjyALWv/28cr4jZW1L7K3oqIEeulNlZ07kVULz1IqFzHYir
+        wnij6XkvJedxzVEFrkQpUHMOamsv2DbNBxWWc9f5k1wC1bCcg6b+IrvQdBsazvFB05ZXPAqrIvBczTlz
+        qqu5eUWUYDesCTR53+V+Q4y6JY+qQASjiQP1HAYK4jovmy27VoXnnX5+S79fhMGpd5d2dlKev4sMW9kC
+        EnIAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnShowConfirmPassword.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQECWAJYAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
@@ -828,24 +840,6 @@
         KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=
 </value>
   </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAKtJREFUWEft
-        lcEJhjAMhTuKo/yjOIT98egmYh3EMerNUZQntdhnD4IaD+aDQGokeT6DGqMoivJ5rPOldeP8Qkz/zjcG
-        BxYlQd36AiIeF1D1/odBCOT72jr7aQHWjQMGxydOayICYn+elRWw2XU1D2devHX59vVEwGYT4kqeDCAO
-        jvBNaHRHDrg3X8sKuJPgyPlXIE0UwNZJEHZmNvgcZmySiAm/ARamKIryPRbMM522mHmCcwAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAKtJREFUWEft
-        lcEJhjAMhTuKo/yjOIT98egmYh3EMerNUZQntdhnD4IaD+aDQGokeT6DGqMoivJ5rPOldeP8Qkz/zjcG
-        BxYlQd36AiIeF1D1/odBCOT72jr7aQHWjQMGxydOayICYn+elRWw2XU1D2devHX59vVEwGYT4kqeDCAO
-        jvBNaHRHDrg3X8sKuJPgyPlXIE0UwNZJEHZmNvgcZmySiAm/ARamKIryPRbMM522mHmCcwAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAK1JREFUWEft
@@ -853,18 +847,6 @@
         how6iex2LhOkMyCy27lMkM6gk8+MjLuXzxYiu53LBOkMiOx2LhOkMyCy27lMkM6AyG7nMkE6g04+MzLu
         Xj5biOx2LhOkMyCy27lMkM5gJENGnSMZMurM8p2Tu1uQdBHUXX9+99T3lmX5ABT/JuehGFAtAAAAAElF
         TkSuQmCC
-</value>
-  </data>
-  <data name="btnNext.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAWlJREFUWEft
-        ltGNwjAMhhnlRmGUDkHRPd4mFb1BGCPwdKOA/sY/RG4SO+m9IPWTIkHS2r8T2+nhsPNJfE/h63wJP+N8
-        u47z7SHjL477dPoNR/3OvyBOF2f4jQFnEIQxzmGAABG2PKNtdBGNR6Pe6OSdZVfwW6+7gcMY9X3SaxbJ
-        UfWJkCgeVtQ8Aj1P4tF0iIjbbkfuccCd0PNFaFTPl7C2+p0TYdBrWVoSjlgiJJ/soCT6q573YImAXTOw
-        WMv22ZeoiXDZbjqrAiUR7KDp3Irciz3kRLjyALWv/28cr4jZW1L7K3oqIEeulNlZ07kVULz1IqFzHYir
-        wnij6XkvJedxzVEFrkQpUHMOamsv2DbNBxWWc9f5k1wC1bCcg6b+IrvQdBsazvFB05ZXPAqrIvBczTlz
-        qqu5eUWUYDesCTR53+V+Q4y6JY+qQASjiQP1HAYK4jovmy27VoXnnX5+S79fhMGpd5d2dlKev4sMW9kC
-        EnIAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

@@ -214,10 +214,10 @@
     <Compile Include="Applications\InternationalLicenseApplications\UserControls\UCNewInterNationalLicense.Designer.cs">
       <DependentUpon>UCNewInterNationalLicense.cs</DependentUpon>
     </Compile>
-    <Compile Include="Licenses\UserControls\UCDrivingLicenseApplicationInfo.cs">
+    <Compile Include="Licenses\LocalLicenses\UserControls\UCDrivingLicenseApplicationInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Licenses\UserControls\UCDrivingLicenseApplicationInfo.Designer.cs">
+    <Compile Include="Licenses\LocalLicenses\UserControls\UCDrivingLicenseApplicationInfo.Designer.cs">
       <DependentUpon>UCDrivingLicenseApplicationInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\frmChangePassword.cs">
@@ -384,7 +384,7 @@
     <EmbeddedResource Include="Applications\InternationalLicenseApplications\UserControls\UCNewInterNationalLicense.resx">
       <DependentUpon>UCNewInterNationalLicense.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Licenses\UserControls\UCDrivingLicenseApplicationInfo.resx">
+    <EmbeddedResource Include="Licenses\LocalLicenses\UserControls\UCDrivingLicenseApplicationInfo.resx">
       <DependentUpon>UCDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmChangePassword.resx">
@@ -1046,6 +1046,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Car3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\,.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender,.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\,1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address,.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Call1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-05-26 at 3.27.19 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Persons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnableShowIcon.jpeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DisableShowIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InternationalLicenseApplications.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

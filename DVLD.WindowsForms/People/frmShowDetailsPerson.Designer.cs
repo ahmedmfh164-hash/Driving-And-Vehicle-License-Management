@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmShowDetailsPerson));
             this.label1 = new System.Windows.Forms.Label();
             this.ucPersonInfo1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCPersonInfo();
-            this.pbImage = new System.Windows.Forms.PictureBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pbImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(403, 187);
+            this.label1.Location = new System.Drawing.Point(403, 209);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 37);
             this.label1.TabIndex = 1;
@@ -48,20 +48,10 @@
             // 
             // ucPersonInfo1
             // 
-            this.ucPersonInfo1.Location = new System.Drawing.Point(30, 241);
+            this.ucPersonInfo1.Location = new System.Drawing.Point(30, 250);
             this.ucPersonInfo1.Name = "ucPersonInfo1";
-            this.ucPersonInfo1.Size = new System.Drawing.Size(955, 316);
+            this.ucPersonInfo1.Size = new System.Drawing.Size(955, 312);
             this.ucPersonInfo1.TabIndex = 3;
-            // 
-            // pbImage
-            // 
-            this.pbImage.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.PersonLicenseHistory_512;
-            this.pbImage.Location = new System.Drawing.Point(348, 4);
-            this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(308, 183);
-            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbImage.TabIndex = 20;
-            this.pbImage.TabStop = false;
             // 
             // btnClose
             // 
@@ -77,12 +67,22 @@
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnClose.Location = new System.Drawing.Point(414, 559);
+            this.btnClose.Location = new System.Drawing.Point(458, 563);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(142, 44);
             this.btnClose.TabIndex = 66;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pbImage
+            // 
+            this.pbImage.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.PersonInfo;
+            this.pbImage.Location = new System.Drawing.Point(348, 4);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(308, 202);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImage.TabIndex = 20;
+            this.pbImage.TabStop = false;
             // 
             // frmShowDetailsPerson
             // 

@@ -16,9 +16,9 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             InitializeComponent();
         }
 
-        public int ReceivePersonID()
+        public int ReceivePersonID
         {
-            return _PersonID;
+            get { return _PersonID; }
         }
 
         public void GetPersonID(int PersonID)
@@ -88,10 +88,10 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             if (_Person._Gender=="Male")
             {
-                pbImage.Image=Resources.Male1;
+                pbImage.Image=Resources.Male3;
             }
             else
-                pbImage.Image= Resources.Female1;
+                pbImage.Image= Resources.Female5;
 
 
         }

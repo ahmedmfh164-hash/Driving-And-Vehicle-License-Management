@@ -111,12 +111,12 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (tbPassword.UseSystemPasswordChar)
             {
                 tbPassword.UseSystemPasswordChar=false;
-                btnShowPassword.BackgroundImage=Resources.DisableShow1;
+                btnShowPassword.BackgroundImage=Resources.DisableShowIcon;
             }
             else
             {
                 tbPassword.UseSystemPasswordChar=true;
-                btnShowPassword.BackgroundImage=Resources.EnableShow3;
+                btnShowPassword.BackgroundImage=Resources.EnableShowIcon_jpeg;
 
             }
         }

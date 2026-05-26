@@ -32,18 +32,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.ucDriverLicenses1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCDriverLicenses();
             this.ucPersonInfo1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCPersonInfo();
+            this.ucDriverLicenses1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCDriverLicenses();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Snap ITC", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(520, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 42);
+            this.label1.Size = new System.Drawing.Size(352, 45);
             this.label1.TabIndex = 42;
             this.label1.Text = "License History";
             // 
@@ -78,31 +78,31 @@
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucPersonInfo1
+            // 
+            this.ucPersonInfo1.BackColor = System.Drawing.Color.Teal;
+            this.ucPersonInfo1.Location = new System.Drawing.Point(298, 78);
+            this.ucPersonInfo1.Name = "ucPersonInfo1";
+            this.ucPersonInfo1.Size = new System.Drawing.Size(932, 300);
+            this.ucPersonInfo1.TabIndex = 46;
+            // 
             // ucDriverLicenses1
             // 
             this.ucDriverLicenses1.BackColor = System.Drawing.Color.Teal;
-            this.ucDriverLicenses1.Location = new System.Drawing.Point(25, 401);
+            this.ucDriverLicenses1.Location = new System.Drawing.Point(13, 402);
             this.ucDriverLicenses1.Name = "ucDriverLicenses1";
-            this.ucDriverLicenses1.Size = new System.Drawing.Size(1170, 269);
+            this.ucDriverLicenses1.Size = new System.Drawing.Size(1217, 269);
             this.ucDriverLicenses1.TabIndex = 45;
-            // 
-            // ucPersonInfo1
-            // 
-            this.ucPersonInfo1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ucPersonInfo1.Location = new System.Drawing.Point(295, 78);
-            this.ucPersonInfo1.Name = "ucPersonInfo1";
-            this.ucPersonInfo1.Size = new System.Drawing.Size(900, 300);
-            this.ucPersonInfo1.TabIndex = 43;
             // 
             // frmShowLicenseHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(1223, 721);
+            this.ClientSize = new System.Drawing.Size(1242, 721);
+            this.Controls.Add(this.ucPersonInfo1);
             this.Controls.Add(this.ucDriverLicenses1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ucPersonInfo1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -119,8 +119,8 @@
         #endregion
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
         private System.Windows.Forms.Label label1;
-        private UCPersonInfo ucPersonInfo1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private UCDriverLicenses ucDriverLicenses1;
+        private UCPersonInfo ucPersonInfo1;
     }
 }

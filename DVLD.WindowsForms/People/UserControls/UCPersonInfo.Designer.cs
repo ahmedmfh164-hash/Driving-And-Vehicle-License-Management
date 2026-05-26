@@ -48,6 +48,9 @@
             this.lblCountry = new System.Windows.Forms.Label();
             this.llblEditPersonInfo = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -55,10 +58,10 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pbImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -66,9 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -294,13 +294,42 @@
             this.groupBox1.Controls.Add(this.lblDateOfBirth);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Location = new System.Drawing.Point(3, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(931, 300);
+            this.groupBox1.Size = new System.Drawing.Size(921, 300);
             this.groupBox1.TabIndex = 45;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Person Information";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
+            this.pictureBox1.Location = new System.Drawing.Point(519, 152);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Call;
+            this.pictureBox3.Location = new System.Drawing.Point(519, 195);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 37;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.International_323;
+            this.pictureBox4.Location = new System.Drawing.Point(519, 245);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox4.TabIndex = 38;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -315,10 +344,11 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Teal;
-            this.pictureBox9.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Person_32;
+            this.pictureBox9.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.aa;
             this.pictureBox9.Location = new System.Drawing.Point(118, 63);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 43;
             this.pictureBox9.TabStop = false;
             // 
@@ -356,10 +386,11 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Teal;
-            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Address_32;
+            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Address_;
             this.pictureBox5.Location = new System.Drawing.Point(116, 251);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 39;
             this.pictureBox5.TabStop = false;
             // 
@@ -367,7 +398,7 @@
             // 
             this.pbImage.BackColor = System.Drawing.Color.Teal;
             this.pbImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbImage.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Female1;
+            this.pbImage.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Female5;
             this.pbImage.Location = new System.Drawing.Point(711, 50);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(199, 231);
@@ -375,36 +406,9 @@
             this.pbImage.TabIndex = 19;
             this.pbImage.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
-            this.pictureBox1.Location = new System.Drawing.Point(519, 152);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 34);
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Call;
-            this.pictureBox3.Location = new System.Drawing.Point(519, 195);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 34);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 37;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.International_323;
-            this.pictureBox4.Location = new System.Drawing.Point(519, 245);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 34);
-            this.pictureBox4.TabIndex = 38;
-            this.pictureBox4.TabStop = false;
-            // 
             // UCPersonInfo
             // 
+            this.BackColor = System.Drawing.Color.Teal;
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -428,10 +432,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "UCPersonInfo";
-            this.Size = new System.Drawing.Size(931, 300);
+            this.Size = new System.Drawing.Size(932, 300);
             this.Load += new System.EventHandler(this.UCPersonInfo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -439,9 +446,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

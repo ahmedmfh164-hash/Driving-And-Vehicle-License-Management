@@ -28,9 +28,9 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             InitializeComponent();
         }
 
-        public int GetPersonID()
+        public int GetPersonID
         {
-            return _PersonID;
+            get { return _PersonID; }
         }
 
         public void LoadData(int PersonID)
@@ -210,7 +210,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             }
 
-            _PersonID=ucPersonInfo2.ReceivePersonID();
+            _PersonID=ucPersonInfo2.ReceivePersonID;
 
         }
 

@@ -53,10 +53,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(655, 99);
+            this.label1.Font = new System.Drawing.Font("Snap ITC", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(644, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 42);
+            this.label1.Size = new System.Drawing.Size(472, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "Login to your account";
             // 
@@ -64,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(635, 293);
+            this.label3.Location = new System.Drawing.Point(627, 293);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 24);
             this.label3.TabIndex = 16;
@@ -74,7 +74,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(623, 241);
+            this.label2.Location = new System.Drawing.Point(612, 242);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 24);
             this.label2.TabIndex = 14;
@@ -149,7 +149,7 @@
             this.label8.BackColor = System.Drawing.Color.Black;
             this.label8.Font = new System.Drawing.Font("Broadway", 29.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(201, 91);
+            this.label8.Location = new System.Drawing.Point(193, 91);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(184, 45);
             this.label8.TabIndex = 36;
@@ -165,12 +165,12 @@
             this.tbUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tbUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbUserName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbUserName.FillColor = System.Drawing.SystemColors.WindowFrame;
             this.tbUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUserName.ForeColor = System.Drawing.SystemColors.Info;
             this.tbUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbUserName.Location = new System.Drawing.Point(783, 239);
+            this.tbUserName.Location = new System.Drawing.Point(782, 239);
             this.tbUserName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.PlaceholderText = "";
@@ -189,9 +189,9 @@
             this.tbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbPassword.FillColor = System.Drawing.SystemColors.WindowFrame;
             this.tbPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.tbPassword.ForeColor = System.Drawing.SystemColors.Info;
             this.tbPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPassword.Location = new System.Drawing.Point(783, 290);
@@ -207,8 +207,8 @@
             // 
             // btnShowPassword
             // 
-            this.btnShowPassword.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnShowPassword.BackgroundImage = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.EnableShow3;
+            this.btnShowPassword.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnShowPassword.BackgroundImage = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.EnableShowIcon_jpeg;
             this.btnShowPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShowPassword.FlatAppearance.BorderSize = 0;
             this.btnShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -237,12 +237,12 @@
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnClose.FillColor = System.Drawing.SystemColors.WindowFrame;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClose.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.btnClose.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.closeBlack32;
             this.btnClose.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnClose.Location = new System.Drawing.Point(1101, 0);
+            this.btnClose.Location = new System.Drawing.Point(1103, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(50, 45);
             this.btnClose.TabIndex = 29;
@@ -272,20 +272,20 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Password_322;
-            this.pictureBox3.Location = new System.Drawing.Point(742, 289);
+            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
+            this.pictureBox3.Location = new System.Drawing.Point(734, 289);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(43, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Person_32;
-            this.pictureBox2.Location = new System.Drawing.Point(742, 239);
+            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Male4;
+            this.pictureBox2.Location = new System.Drawing.Point(735, 236);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 26);
+            this.pictureBox2.Size = new System.Drawing.Size(37, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
@@ -294,7 +294,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(1154, 576);
             this.Controls.Add(this.tbUserName);
             this.Controls.Add(this.label8);

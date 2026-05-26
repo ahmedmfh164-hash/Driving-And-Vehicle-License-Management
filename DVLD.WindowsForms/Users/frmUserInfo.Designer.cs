@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserInfo));
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pbImage = new System.Windows.Forms.PictureBox();
             this.ucUserInfo1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCUserInfo();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // btnClose
@@ -47,19 +49,29 @@
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnClose.Location = new System.Drawing.Point(424, 451);
+            this.btnClose.Location = new System.Drawing.Point(425, 587);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(146, 35);
             this.btnClose.TabIndex = 26;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // pbImage
+            // 
+            this.pbImage.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.PersonInfo;
+            this.pbImage.Location = new System.Drawing.Point(325, -4);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(274, 193);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImage.TabIndex = 28;
+            this.pbImage.TabStop = false;
+            // 
             // ucUserInfo1
             // 
             this.ucUserInfo1.BackColor = System.Drawing.Color.Teal;
-            this.ucUserInfo1.Location = new System.Drawing.Point(12, 12);
+            this.ucUserInfo1.Location = new System.Drawing.Point(2, 190);
             this.ucUserInfo1.Name = "ucUserInfo1";
-            this.ucUserInfo1.Size = new System.Drawing.Size(950, 410);
+            this.ucUserInfo1.Size = new System.Drawing.Size(957, 390);
             this.ucUserInfo1.TabIndex = 27;
             // 
             // frmUserInfo
@@ -67,7 +79,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(966, 510);
+            this.ClientSize = new System.Drawing.Size(971, 631);
+            this.Controls.Add(this.pbImage);
             this.Controls.Add(this.ucUserInfo1);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -75,6 +88,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Info";
             this.Load += new System.EventHandler(this.frmUserInfo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -82,5 +96,6 @@
         #endregion
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
         private UCUserInfo ucUserInfo1;
+        private System.Windows.Forms.PictureBox pbImage;
     }
 }

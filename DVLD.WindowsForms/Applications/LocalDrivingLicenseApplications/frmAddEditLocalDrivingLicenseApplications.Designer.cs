@@ -32,19 +32,12 @@
             this.tcNewLocalLicenseApp = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpPersonalInfo = new System.Windows.Forms.TabPage();
             this.ucPersonInfoWithFilterBy1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCPersonInfoWithFilterBy();
-            this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tpLoginInfo = new System.Windows.Forms.TabPage();
             this.cbLicenseCLass = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblCreatedBy = new System.Windows.Forms.Label();
             this.lblFees = new System.Windows.Forms.Label();
             this.lblApplicationDate = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDLApplicationID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,6 +46,13 @@
             this.lblMode = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tcNewLocalLicenseApp.SuspendLayout();
             this.tpPersonalInfo.SuspendLayout();
             this.tpLoginInfo.SuspendLayout();
@@ -92,6 +92,7 @@
             this.tcNewLocalLicenseApp.TabIndex = 27;
             this.tcNewLocalLicenseApp.TabMenuBackColor = System.Drawing.Color.Teal;
             this.tcNewLocalLicenseApp.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            this.tcNewLocalLicenseApp.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tcNewLocalLicenseApp_Selecting);
             // 
             // tpPersonalInfo
             // 
@@ -112,27 +113,6 @@
             this.ucPersonInfoWithFilterBy1.Name = "ucPersonInfoWithFilterBy1";
             this.ucPersonInfoWithFilterBy1.Size = new System.Drawing.Size(982, 409);
             this.ucPersonInfoWithFilterBy1.TabIndex = 24;
-            // 
-            // btnNext
-            // 
-            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNext.FillColor = System.Drawing.Color.Maroon;
-            this.btnNext.FillColor2 = System.Drawing.Color.ForestGreen;
-            this.btnNext.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.Blue;
-            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
-            this.btnNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnNext.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnNext.Location = new System.Drawing.Point(831, 415);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(146, 35);
-            this.btnNext.TabIndex = 23;
-            this.btnNext.Text = "Next";
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // tpLoginInfo
             // 
@@ -185,15 +165,6 @@
             this.cbLicenseCLass.TabIndex = 41;
             this.cbLicenseCLass.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.User_32__2;
-            this.pictureBox5.Location = new System.Drawing.Point(201, 255);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(38, 28);
-            this.pictureBox5.TabIndex = 40;
-            this.pictureBox5.TabStop = false;
-            // 
             // lblCreatedBy
             // 
             this.lblCreatedBy.AutoSize = true;
@@ -233,66 +204,6 @@
             this.label6.Size = new System.Drawing.Size(103, 20);
             this.label6.TabIndex = 34;
             this.label6.Text = "Created By:";
-            // 
-            // btnBack
-            // 
-            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBack.FillColor = System.Drawing.Color.ForestGreen;
-            this.btnBack.FillColor2 = System.Drawing.Color.Maroon;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.Blue;
-            this.btnBack.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Prev_32;
-            this.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBack.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnBack.Location = new System.Drawing.Point(830, 414);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(146, 35);
-            this.btnBack.TabIndex = 27;
-            this.btnBack.Text = "Back";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.money_321;
-            this.pictureBox4.Location = new System.Drawing.Point(201, 204);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 28);
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Renew_Driving_License_321;
-            this.pictureBox3.Location = new System.Drawing.Point(201, 155);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_321;
-            this.pictureBox2.Location = new System.Drawing.Point(201, 108);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(201, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // lblDLApplicationID
             // 
@@ -395,6 +306,96 @@
             this.btnSave.TabIndex = 29;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNext.FillColor = System.Drawing.Color.Maroon;
+            this.btnNext.FillColor2 = System.Drawing.Color.ForestGreen;
+            this.btnNext.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.Blue;
+            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
+            this.btnNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnNext.ImageSize = new System.Drawing.Size(28, 28);
+            this.btnNext.Location = new System.Drawing.Point(831, 415);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(146, 35);
+            this.btnNext.TabIndex = 23;
+            this.btnNext.Text = "Next";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.User_32__2;
+            this.pictureBox5.Location = new System.Drawing.Point(201, 255);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(38, 28);
+            this.pictureBox5.TabIndex = 40;
+            this.pictureBox5.TabStop = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.ForestGreen;
+            this.btnBack.FillColor2 = System.Drawing.Color.Maroon;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.Blue;
+            this.btnBack.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Prev_32;
+            this.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBack.ImageSize = new System.Drawing.Size(28, 28);
+            this.btnBack.Location = new System.Drawing.Point(830, 414);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(146, 35);
+            this.btnBack.TabIndex = 27;
+            this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.money_321;
+            this.pictureBox4.Location = new System.Drawing.Point(201, 204);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(38, 28);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Renew_Driving_License_321;
+            this.pictureBox3.Location = new System.Drawing.Point(201, 155);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
+            this.pictureBox2.Location = new System.Drawing.Point(201, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Applications_641;
+            this.pictureBox1.Location = new System.Drawing.Point(201, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // frmAddEditLocalDrivingLicenseApplications
             // 

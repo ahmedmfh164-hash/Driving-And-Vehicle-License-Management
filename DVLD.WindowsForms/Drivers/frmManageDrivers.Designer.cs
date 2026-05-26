@@ -55,7 +55,7 @@
             // 
             this.lblCountRecords.AutoSize = true;
             this.lblCountRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountRecords.Location = new System.Drawing.Point(128, 618);
+            this.lblCountRecords.Location = new System.Drawing.Point(128, 641);
             this.lblCountRecords.Name = "lblCountRecords";
             this.lblCountRecords.Size = new System.Drawing.Size(122, 18);
             this.lblCountRecords.TabIndex = 19;
@@ -65,7 +65,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 617);
+            this.label3.Location = new System.Drawing.Point(40, 640);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 18);
             this.label3.TabIndex = 18;
@@ -76,7 +76,7 @@
             this.txtFilterBy.BackColor = System.Drawing.Color.Silver;
             this.txtFilterBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFilterBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilterBy.Location = new System.Drawing.Point(309, 256);
+            this.txtFilterBy.Location = new System.Drawing.Point(309, 279);
             this.txtFilterBy.Name = "txtFilterBy";
             this.txtFilterBy.Size = new System.Drawing.Size(191, 26);
             this.txtFilterBy.TabIndex = 17;
@@ -100,7 +100,7 @@
             "Full Name",
             "Created Date",
             "Active Licenses"});
-            this.cbFilterBy.Location = new System.Drawing.Point(95, 255);
+            this.cbFilterBy.Location = new System.Drawing.Point(95, 278);
             this.cbFilterBy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbFilterBy.Name = "cbFilterBy";
             this.cbFilterBy.Size = new System.Drawing.Size(199, 28);
@@ -111,7 +111,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 256);
+            this.label2.Location = new System.Drawing.Point(8, 279);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 24);
@@ -121,11 +121,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(425, 211);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 37);
+            this.label1.Size = new System.Drawing.Size(270, 45);
             this.label1.TabIndex = 12;
             this.label1.Text = "Manage Drivers";
             // 
@@ -176,14 +176,14 @@
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.FillColor = System.Drawing.Color.DarkGreen;
-            this.btnClose.FillColor2 = System.Drawing.Color.Black;
+            this.btnClose.FillColor = System.Drawing.Color.DimGray;
+            this.btnClose.FillColor2 = System.Drawing.Color.SkyBlue;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Blue;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(36, 36);
-            this.btnClose.Location = new System.Drawing.Point(888, 603);
+            this.btnClose.Location = new System.Drawing.Point(888, 626);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(195, 47);
             this.btnClose.TabIndex = 70;
@@ -236,7 +236,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDrivers.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDrivers.GridColor = System.Drawing.Color.Teal;
-            this.dgvDrivers.Location = new System.Drawing.Point(12, 288);
+            this.dgvDrivers.Location = new System.Drawing.Point(12, 311);
             this.dgvDrivers.MultiSelect = false;
             this.dgvDrivers.Name = "dgvDrivers";
             this.dgvDrivers.ReadOnly = true;
@@ -272,7 +272,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(1099, 656);
+            this.ClientSize = new System.Drawing.Size(1099, 685);
             this.Controls.Add(this.dgvDrivers);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblCountRecords);

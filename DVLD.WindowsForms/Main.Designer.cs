@@ -90,7 +90,7 @@
             this.manageTestTypesToolStripMenuItem});
             this.applicationsToolStripMenuItem.Font = new System.Drawing.Font("Engravers MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.applicationsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.applicationsToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Manage_Applications_641;
+            this.applicationsToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.AppID;
             this.applicationsToolStripMenuItem.Name = "applicationsToolStripMenuItem";
             this.applicationsToolStripMenuItem.Size = new System.Drawing.Size(280, 76);
             this.applicationsToolStripMenuItem.Text = "Applications";
@@ -107,7 +107,7 @@
             this.drivingLicensesServicesToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drivingLicensesServicesToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Driver_License_48;
             this.drivingLicensesServicesToolStripMenuItem.Name = "drivingLicensesServicesToolStripMenuItem";
-            this.drivingLicensesServicesToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
+            this.drivingLicensesServicesToolStripMenuItem.Size = new System.Drawing.Size(333, 46);
             this.drivingLicensesServicesToolStripMenuItem.Text = "Driving Licenses Services";
             // 
             // newDrivingLicenseToolStripMenuItem
@@ -176,7 +176,7 @@
             this.manageApplicationsToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageApplicationsToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Manage_Applications_64;
             this.manageApplicationsToolStripMenuItem.Name = "manageApplicationsToolStripMenuItem";
-            this.manageApplicationsToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
+            this.manageApplicationsToolStripMenuItem.Size = new System.Drawing.Size(333, 46);
             this.manageApplicationsToolStripMenuItem.Text = "Manage Applications";
             // 
             // localDrivingLicenseApplicationsToolStripMenuItem
@@ -204,7 +204,7 @@
             this.detainLicensesToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detainLicensesToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Detain_512;
             this.detainLicensesToolStripMenuItem.Name = "detainLicensesToolStripMenuItem";
-            this.detainLicensesToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
+            this.detainLicensesToolStripMenuItem.Size = new System.Drawing.Size(333, 46);
             this.detainLicensesToolStripMenuItem.Text = "Detain Licenses";
             // 
             // manageDetainedLicensesToolStripMenuItem
@@ -236,7 +236,7 @@
             this.manageApplicationTypesToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageApplicationTypesToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Application_Types_512;
             this.manageApplicationTypesToolStripMenuItem.Name = "manageApplicationTypesToolStripMenuItem";
-            this.manageApplicationTypesToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
+            this.manageApplicationTypesToolStripMenuItem.Size = new System.Drawing.Size(333, 46);
             this.manageApplicationTypesToolStripMenuItem.Text = "Manage Application Types";
             this.manageApplicationTypesToolStripMenuItem.Click += new System.EventHandler(this.manageApplicationTypesToolStripMenuItem_Click);
             // 
@@ -245,7 +245,7 @@
             this.manageTestTypesToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageTestTypesToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.TestType_512;
             this.manageTestTypesToolStripMenuItem.Name = "manageTestTypesToolStripMenuItem";
-            this.manageTestTypesToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
+            this.manageTestTypesToolStripMenuItem.Size = new System.Drawing.Size(333, 46);
             this.manageTestTypesToolStripMenuItem.Text = "Manage Test Types";
             this.manageTestTypesToolStripMenuItem.Click += new System.EventHandler(this.manageTestTypesToolStripMenuItem_Click);
             // 
@@ -253,7 +253,7 @@
             // 
             this.peopleToolStripMenuItem.Font = new System.Drawing.Font("Engravers MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.peopleToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.peopleToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.People2;
+            this.peopleToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.People31;
             this.peopleToolStripMenuItem.Name = "peopleToolStripMenuItem";
             this.peopleToolStripMenuItem.Size = new System.Drawing.Size(177, 76);
             this.peopleToolStripMenuItem.Text = "People";
@@ -288,7 +288,7 @@
             this.signOutToolStripMenuItem});
             this.accountSettingsToolStripMenuItem.Font = new System.Drawing.Font("Engravers MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accountSettingsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.accountSettingsToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Users;
+            this.accountSettingsToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.account_settings_64;
             this.accountSettingsToolStripMenuItem.Name = "accountSettingsToolStripMenuItem";
             this.accountSettingsToolStripMenuItem.Size = new System.Drawing.Size(359, 76);
             this.accountSettingsToolStripMenuItem.Text = "Account Settings";
@@ -296,32 +296,32 @@
             // currentUserInfoToolStripMenuItem
             // 
             this.currentUserInfoToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentUserInfoToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.PersonDetails_32;
+            this.currentUserInfoToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.PersonInfo;
             this.currentUserInfoToolStripMenuItem.Name = "currentUserInfoToolStripMenuItem";
-            this.currentUserInfoToolStripMenuItem.Size = new System.Drawing.Size(234, 30);
+            this.currentUserInfoToolStripMenuItem.Size = new System.Drawing.Size(258, 46);
             this.currentUserInfoToolStripMenuItem.Text = "Current User info";
             this.currentUserInfoToolStripMenuItem.Click += new System.EventHandler(this.currentUserInfoToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 
             this.changePasswordToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changePasswordToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Password_32;
+            this.changePasswordToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(234, 30);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(258, 46);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(231, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(255, 6);
             // 
             // signOutToolStripMenuItem
             // 
             this.signOutToolStripMenuItem.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signOutToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.sign_out_32__2;
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(234, 30);
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(258, 46);
             this.signOutToolStripMenuItem.Text = "Sign Out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 

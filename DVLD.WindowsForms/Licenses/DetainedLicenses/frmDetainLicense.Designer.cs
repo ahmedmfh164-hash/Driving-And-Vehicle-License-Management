@@ -248,12 +248,12 @@
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox18.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox18.Location = new System.Drawing.Point(187, 54);
             this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 215;
             this.pictureBox18.TabStop = false;
             // 

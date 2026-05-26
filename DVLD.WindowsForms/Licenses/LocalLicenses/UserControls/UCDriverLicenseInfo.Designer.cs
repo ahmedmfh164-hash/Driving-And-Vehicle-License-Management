@@ -54,9 +54,9 @@
             this.lblGendor = new System.Windows.Forms.Label();
             this.lblIssueDate = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.pbGendor = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -419,28 +419,6 @@
             this.label5.TabIndex = 201;
             this.label5.Text = "Gendor:";
             // 
-            // pbGendor
-            // 
-            this.pbGendor.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Man_32;
-            this.pbGendor.Location = new System.Drawing.Point(617, 200);
-            this.pbGendor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pbGendor.Name = "pbGendor";
-            this.pbGendor.Size = new System.Drawing.Size(31, 26);
-            this.pbGendor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbGendor.TabIndex = 202;
-            this.pbGendor.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
-            this.pictureBox5.Location = new System.Drawing.Point(617, 234);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 200;
-            this.pictureBox5.TabStop = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -451,6 +429,28 @@
             this.label6.Size = new System.Drawing.Size(102, 20);
             this.label6.TabIndex = 199;
             this.label6.Text = "Issue Date:";
+            // 
+            // pbGendor
+            // 
+            this.pbGendor.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Male4;
+            this.pbGendor.Location = new System.Drawing.Point(617, 200);
+            this.pbGendor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbGendor.Name = "pbGendor";
+            this.pbGendor.Size = new System.Drawing.Size(31, 26);
+            this.pbGendor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbGendor.TabIndex = 202;
+            this.pbGendor.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
+            this.pictureBox5.Location = new System.Drawing.Point(617, 234);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 200;
+            this.pictureBox5.TabStop = false;
             // 
             // pictureBox12
             // 
@@ -476,12 +476,12 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Person_32;
+            this.pictureBox8.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.aa;
             this.pictureBox8.Location = new System.Drawing.Point(137, 62);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 128;
             this.pictureBox8.TabStop = false;
             // 
@@ -503,13 +503,13 @@
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 189;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Driver_License_484;
+            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.DriverLicense1;
             this.pictureBox2.Location = new System.Drawing.Point(612, 96);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
@@ -531,12 +531,12 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox4.Location = new System.Drawing.Point(618, 64);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 123;
             this.pictureBox4.TabStop = false;
             // 
@@ -553,12 +553,12 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox6.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox6.Location = new System.Drawing.Point(618, 131);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 125;
             this.pictureBox6.TabStop = false;
             // 

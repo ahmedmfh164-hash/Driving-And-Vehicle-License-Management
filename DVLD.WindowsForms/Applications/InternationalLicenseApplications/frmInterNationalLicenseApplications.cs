@@ -59,6 +59,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void frmInterNationalLicenseApplications_Load(object sender, EventArgs e)
         {
             cbFilterBy.SelectedIndex=0;
+            cbIsActive.Visible=false;
             _RefreshData();
 
         }
@@ -101,7 +102,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             {
                 case 0:
                     txtFilterBy.Visible=false;
-
+                    cbIsActive.Visible=false;
                     break;
                 case 1:
                 case 2:

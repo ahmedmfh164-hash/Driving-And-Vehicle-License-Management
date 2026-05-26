@@ -42,13 +42,13 @@
             this.btnShowCurrentPassword = new System.Windows.Forms.Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ucUserInfo1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCUserInfo();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,8 +166,8 @@
             // 
             // btnShowConfirmPassword
             // 
-            this.btnShowConfirmPassword.BackColor = System.Drawing.SystemColors.Control;
-            this.btnShowConfirmPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowConfirmPassword.BackgroundImage")));
+            this.btnShowConfirmPassword.BackColor = System.Drawing.Color.Teal;
+            this.btnShowConfirmPassword.BackgroundImage = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.EnableShowIcon_jpeg;
             this.btnShowConfirmPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShowConfirmPassword.FlatAppearance.BorderSize = 0;
             this.btnShowConfirmPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -180,8 +180,8 @@
             // 
             // btnShowNewPassword
             // 
-            this.btnShowNewPassword.BackColor = System.Drawing.SystemColors.Control;
-            this.btnShowNewPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowNewPassword.BackgroundImage")));
+            this.btnShowNewPassword.BackColor = System.Drawing.Color.Teal;
+            this.btnShowNewPassword.BackgroundImage = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.EnableShowIcon_jpeg;
             this.btnShowNewPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShowNewPassword.FlatAppearance.BorderSize = 0;
             this.btnShowNewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -194,8 +194,8 @@
             // 
             // btnShowCurrentPassword
             // 
-            this.btnShowCurrentPassword.BackColor = System.Drawing.SystemColors.Control;
-            this.btnShowCurrentPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowCurrentPassword.BackgroundImage")));
+            this.btnShowCurrentPassword.BackColor = System.Drawing.Color.Teal;
+            this.btnShowCurrentPassword.BackgroundImage = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.EnableShowIcon_jpeg;
             this.btnShowCurrentPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShowCurrentPassword.FlatAppearance.BorderSize = 0;
             this.btnShowCurrentPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -248,34 +248,15 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(186, 511);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 28);
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(186, 463);
+            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
+            this.pictureBox3.Location = new System.Drawing.Point(184, 463);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(38, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Person_32;
-            this.pictureBox2.Location = new System.Drawing.Point(186, 417);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
             // 
             // ucUserInfo1
             // 
@@ -286,20 +267,40 @@
             this.ucUserInfo1.TabIndex = 0;
             this.ucUserInfo1.Load += new System.EventHandler(this.ucUserInfo1_Load);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
+            this.pictureBox1.Location = new System.Drawing.Point(184, 511);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
+            this.pictureBox2.Location = new System.Drawing.Point(185, 420);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(975, 615);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnShowConfirmPassword);
             this.Controls.Add(this.btnShowNewPassword);
             this.Controls.Add(this.btnShowCurrentPassword);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.label3);
@@ -313,8 +314,8 @@
             this.Text = "frmChangePassword";
             this.Load += new System.EventHandler(this.frmChangePassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -324,9 +325,7 @@
         #endregion
 
         private UCUserInfo ucUserInfo1;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2TextBox tbConfirmPassword;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox tbPassword;
@@ -339,5 +338,7 @@
         private System.Windows.Forms.Button btnShowConfirmPassword;
         private System.Windows.Forms.Button btnShowNewPassword;
         private System.Windows.Forms.Button btnShowCurrentPassword;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

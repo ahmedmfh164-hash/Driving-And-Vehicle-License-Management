@@ -16,20 +16,18 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
     public partial class frmAddEditUser : Form
     {
         private enum enMode { eAddNew,eUpdate};
-        enMode _Mode = enMode.eAddNew;
+       private enMode _Mode = enMode.eAddNew;
 
-        clsUserBusiness _User;
-        int _UserID;
-        bool allowChange = false;
+       private clsUserBusiness _User;
+       private int _UserID;
+        private int _PersonID;
         public frmAddEditUser(int UserID)
         {
             InitializeComponent();
             _UserID = UserID;
             _Mode=enMode.eUpdate;
 
-            allowChange = true;
             tcAddUser.SelectedIndex=1;
-            allowChange=false;
             btnBack.Visible=false; 
         }
 
@@ -41,10 +39,15 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            allowChange = true;
-            tcAddUser.SelectedIndex=1;
-            btnSave.Enabled=true;
-            allowChange = false;
+            if (_PersonID<=0)
+            {
+                MessageBox.Show("Cannot go to next step before selecting person. ", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                tcAddUser.SelectedIndex=1;
+                btnSave.Enabled=true;
+            }
         }
 
 
@@ -72,7 +75,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void SaveDataToObject()
         {
-            _User._PersonID=ucPersonInfoWithFilterBy1.GetPersonID();
+            _User._PersonID=ucPersonInfoWithFilterBy1.GetPersonID;
             _User._UserName=tbUserName.Text;
             _User._Password=tbPassword.Text;
             _User._IsActive=ckIsActive.Checked;
@@ -131,7 +134,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void tcAddUser_Selecting(object sender, TabControlCancelEventArgs e)
         {
-            if (!allowChange)
+            if(MouseButtons==MouseButtons.Left)
             {
                 e.Cancel = true;
             }
@@ -140,10 +143,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            allowChange = true;
             tcAddUser.SelectedIndex=0;
             btnSave.Enabled=true;
-            allowChange = false;
         }
 
         private void tbUserName_Validating(object sender, CancelEventArgs e)
@@ -217,7 +218,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private int ucPersonInfoWithFilterBy3_OnSearchClick(int arg)
         {
-            if (clsUserBusiness.IsUserExistByPersonID(arg))
+            _PersonID=arg;
+            if (clsUserBusiness.IsUserExistByPersonID(_PersonID))
             {
                 MessageBox.Show("User is found in system!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return 0;

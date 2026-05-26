@@ -17,10 +17,10 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private enum enMode { eAddNew, eUpdate };
         enMode _Mode = enMode.eAddNew;
 
-        clsLocalDrivingLicenseApplicationBusiness _LDLApp;
-        int _LDLAppID;
-        bool allowChange = false;
-        clsLicenseClassBusiness _LicenseClass;
+       private clsLocalDrivingLicenseApplicationBusiness _LDLApp;
+       private int _LDLAppID;
+       private clsLicenseClassBusiness _LicenseClass;
+        private int _PersonID;
 
         public frmAddEditLocalDrivingLicenseApplications(int LDLAppID)
         {
@@ -28,9 +28,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             _LDLAppID = LDLAppID;
             _Mode=enMode.eUpdate;
 
-            allowChange = true;
             tcNewLocalLicenseApp.SelectedIndex=1;
-            allowChange=false;
             btnBack.Visible=false;
         }
 
@@ -67,10 +65,16 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            allowChange = true;
-            tcNewLocalLicenseApp.SelectedIndex=1;
-            btnSave.Enabled=true;
-            allowChange = false;
+            _PersonID = ucPersonInfoWithFilterBy1.GetPersonID;
+            if (_PersonID<=0)
+            {
+                MessageBox.Show("Cannot go to next step before selecting person. ", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                tcNewLocalLicenseApp.SelectedIndex=1;
+                btnSave.Enabled=true;
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -84,8 +88,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             int LicenseClassID = clsLicenseClassBusiness.Find(cbLicenseCLass.Text).LicenseClassID;
 
-
-            int ActiveApplicationID = clsApplicationBusiness.GetActiveApplicationIDForLicenseClass(ucPersonInfoWithFilterBy1.GetPersonID(), clsApplicationBusiness.enApplicationType.NewDrivingLicense, LicenseClassID);
+            int ActiveApplicationID = clsApplicationBusiness.GetActiveApplicationIDForLicenseClass(_PersonID, clsApplicationBusiness.enApplicationType.NewDrivingLicense, LicenseClassID);
 
             if (ActiveApplicationID != -1)
             {
@@ -95,13 +98,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             }
 
 
-            if (clsLicenseBusiness.IsLicenseExistByPersonID(ucPersonInfoWithFilterBy1.GetPersonID(), LicenseClassID))
+            if (clsLicenseBusiness.IsLicenseExistByPersonID(_PersonID, LicenseClassID))
             {
 
                 MessageBox.Show("Person already have a license with the same applied driving class, Choose different driving class", "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            _LDLApp.ApplicantPersonID = ucPersonInfoWithFilterBy1.GetPersonID();
+            _LDLApp.ApplicantPersonID = _PersonID;
             _LDLApp.ApplicationTypeID = 1;
             _LDLApp.ApplicationStatus = clsApplicationBusiness.enApplicationStatus.New;
             _LDLApp.LastStatusDate = DateTime.Now;
@@ -132,16 +135,15 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            allowChange = true;
             tcNewLocalLicenseApp.SelectedIndex=0;
             btnSave.Enabled=true;
-            allowChange = false;
         }
 
       
 
         private void frmAddEditLocalDrivingLicenseApplications_Load(object sender, EventArgs e)
         {
+            
             _LoadData();
         }
 
@@ -149,8 +151,16 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         {
             _LicenseClass= clsLicenseClassBusiness.Find(cbLicenseCLass.Text);
 
-                         lblFees.Text=_LicenseClass.ClassFees.ToString();
+            lblFees.Text=_LicenseClass.ClassFees.ToString();
 
+        }
+
+        private void tcNewLocalLicenseApp_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if(MouseButtons==MouseButtons.Left)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

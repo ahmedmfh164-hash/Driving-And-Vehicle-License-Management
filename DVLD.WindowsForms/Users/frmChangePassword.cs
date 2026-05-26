@@ -117,12 +117,12 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (txtb.UseSystemPasswordChar)
             {
                 txtb.UseSystemPasswordChar=false;
-                btn.BackgroundImage=Resources.DisableShowTral2;
+                btn.BackgroundImage=Resources.DisableShowIcon;
             }
             else
             {
                 txtb.UseSystemPasswordChar=true;
-                btn.BackgroundImage=Resources.EnableShowTeal1;
+                btn.BackgroundImage=Resources.EnableShowIcon_jpeg;
 
             }
         }

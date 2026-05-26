@@ -47,7 +47,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             else
             { _Mode= enMode.Update; }
         }
-        void FillcbCountry()
+       private void FillcbCountry()
         {
             cbCountry.DataSource=clsCountriesBusiness.GetAllCountries();
             cbCountry.DisplayMember="CountryName";
@@ -68,7 +68,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             txtAddress.Text="";
             txtPhone.Text="";
                 rbMale.Checked=true;
-            pbImage.Image = Resources.Male11 ;
+            pbImage.Image = Resources.Male3;
 
             llRemoveImage.Visible=false;
 
@@ -129,10 +129,10 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
                 if (_Person._Gender=="Male")
                 {
-                    pbImage.Image=Resources.Male11;
+                    pbImage.Image=Resources.Male3;
                 }
                 else
-                    pbImage.Image= Resources.Female1;
+                    pbImage.Image= Resources.Female5;
 
 
             llRemoveImage.Visible=false;
@@ -321,7 +321,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         {
             if (pbImage.ImageLocation==null)
             {
-                pbImage.Image= Resources.Female1;
+                pbImage.Image= Resources.Female5;
                 llRemoveImage.Visible= false;
             }
         }
@@ -330,7 +330,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         {
             if (pbImage.ImageLocation==null)
               {
-                pbImage.Image= Resources.Male11;
+                pbImage.Image= Resources.Male3;
                 llRemoveImage.Visible= false;
             }
         }
@@ -342,12 +342,12 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             try
             {
-                    if (pbImage.Image!= Resources.Male11&&pbImage.Image!=Resources.Female1)
+                    if (pbImage.Image!= Resources.Male3&&pbImage.Image!=Resources.Female5)
                     {
                         if (rbMale.Checked)
-                            pbImage.Image= Resources.Male11;
+                            pbImage.Image= Resources.Male3;
                         else
-                            pbImage.Image= Resources.Female1;
+                            pbImage.Image= Resources.Female5;
                     pbImage.Tag="Default";
                     }
 

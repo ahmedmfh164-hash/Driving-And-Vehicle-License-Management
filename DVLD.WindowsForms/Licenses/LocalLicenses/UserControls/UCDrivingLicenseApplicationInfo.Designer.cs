@@ -261,7 +261,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Person_32;
+            this.pictureBox7.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.aa;
             this.pictureBox7.Location = new System.Drawing.Point(97, 187);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 31);
@@ -319,10 +319,11 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox5.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox5.Location = new System.Drawing.Point(666, 63);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(32, 36);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 50;
             this.pictureBox5.TabStop = false;
             // 
@@ -348,10 +349,11 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_321;
+            this.pictureBox9.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox9.Location = new System.Drawing.Point(666, 105);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(32, 31);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 47;
             this.pictureBox9.TabStop = false;
             // 
@@ -436,7 +438,7 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Applications_64;
+            this.pictureBox12.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.AppID;
             this.pictureBox12.Location = new System.Drawing.Point(96, 33);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(32, 34);

@@ -188,6 +188,7 @@
             this.txtbLicenseID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtbLicenseID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbLicenseID.Location = new System.Drawing.Point(193, 32);
+            this.txtbLicenseID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbLicenseID.Name = "txtbLicenseID";
             this.txtbLicenseID.PlaceholderText = "";
             this.txtbLicenseID.SelectedText = "";
@@ -320,7 +321,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Applications_641;
+            this.pictureBox6.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.AppID;
             this.pictureBox6.Location = new System.Drawing.Point(585, 60);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
@@ -386,12 +387,12 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Driver_License_483;
+            this.pictureBox14.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Detained_Driving_License_32;
             this.pictureBox14.Location = new System.Drawing.Point(174, 31);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 218;
             this.pictureBox14.TabStop = false;
             // 
@@ -420,7 +421,7 @@
             // 
             // pictureBox17
             // 
-            this.pictureBox17.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox17.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox17.Location = new System.Drawing.Point(172, 125);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox17.Name = "pictureBox17";
@@ -442,7 +443,7 @@
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calendar_32;
+            this.pictureBox18.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Calender1;
             this.pictureBox18.Location = new System.Drawing.Point(173, 62);
             this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox18.Name = "pictureBox18";

@@ -70,7 +70,6 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             else
                 pbPersonImage.ImageLocation=Person._ImagePath;
 
-            MessageBox.Show("d"+Person._ImagePath);
 
         }
 

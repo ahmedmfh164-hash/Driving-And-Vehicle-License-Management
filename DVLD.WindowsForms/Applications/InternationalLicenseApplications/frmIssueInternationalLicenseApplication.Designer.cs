@@ -112,7 +112,7 @@
             this.txtbLicenseID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbLicenseID.FillColor = System.Drawing.Color.DarkSlateGray;
             this.txtbLicenseID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbLicenseID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbLicenseID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbLicenseID.ForeColor = System.Drawing.Color.Black;
             this.txtbLicenseID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbLicenseID.Location = new System.Drawing.Point(213, 34);

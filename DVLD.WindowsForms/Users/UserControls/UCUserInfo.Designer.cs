@@ -42,9 +42,9 @@
             // ucPersonInfo1
             // 
             this.ucPersonInfo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ucPersonInfo1.Location = new System.Drawing.Point(5, 11);
+            this.ucPersonInfo1.Location = new System.Drawing.Point(18, 11);
             this.ucPersonInfo1.Name = "ucPersonInfo1";
-            this.ucPersonInfo1.Size = new System.Drawing.Size(965, 315);
+            this.ucPersonInfo1.Size = new System.Drawing.Size(965, 307);
             this.ucPersonInfo1.TabIndex = 0;
             this.ucPersonInfo1.Load += new System.EventHandler(this.ucPersonInfo1_Load);
             // 
@@ -58,7 +58,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(5, 334);
+            this.groupBox1.Location = new System.Drawing.Point(17, 322);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(933, 66);
             this.groupBox1.TabIndex = 1;
@@ -134,7 +134,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ucPersonInfo1);
             this.Name = "UCUserInfo";
-            this.Size = new System.Drawing.Size(975, 410);
+            this.Size = new System.Drawing.Size(975, 400);
             this.Load += new System.EventHandler(this.UCUserInfo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
