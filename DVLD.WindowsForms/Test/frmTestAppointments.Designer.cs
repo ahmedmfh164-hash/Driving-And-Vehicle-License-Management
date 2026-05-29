@@ -37,14 +37,14 @@
             this.lblModeTest = new System.Windows.Forms.Label();
             this.dgvAppointments = new Guna.UI2.WinForms.Guna2DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.takeTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblCountRecords = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddTest = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.takeTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbMode = new System.Windows.Forms.PictureBox();
             this.ucDrivingLicenseApplicationInfo1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCDrivingLicenseApplicationInfo();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -144,10 +144,26 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(160, 82);
             // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.edit_32;
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(159, 36);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(156, 6);
+            // 
+            // takeTestToolStripMenuItem
+            // 
+            this.takeTestToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Test_32;
+            this.takeTestToolStripMenuItem.Name = "takeTestToolStripMenuItem";
+            this.takeTestToolStripMenuItem.Size = new System.Drawing.Size(159, 36);
+            this.takeTestToolStripMenuItem.Text = "Take Test";
+            this.takeTestToolStripMenuItem.Click += new System.EventHandler(this.takeTestToolStripMenuItem_Click);
             // 
             // lblCountRecords
             // 
@@ -216,22 +232,6 @@
             this.btnAddTest.TabIndex = 5;
             this.btnAddTest.Click += new System.EventHandler(this.btnAddTest_Click);
             // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.edit_32;
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(159, 36);
-            this.editToolStripMenuItem.Text = "Edit";
-            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
-            // 
-            // takeTestToolStripMenuItem
-            // 
-            this.takeTestToolStripMenuItem.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Test_32;
-            this.takeTestToolStripMenuItem.Name = "takeTestToolStripMenuItem";
-            this.takeTestToolStripMenuItem.Size = new System.Drawing.Size(159, 36);
-            this.takeTestToolStripMenuItem.Text = "Take Test";
-            this.takeTestToolStripMenuItem.Click += new System.EventHandler(this.takeTestToolStripMenuItem_Click);
-            // 
             // pbMode
             // 
             this.pbMode.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Vision_512;
@@ -244,6 +244,7 @@
             // 
             // ucDrivingLicenseApplicationInfo1
             // 
+            this.ucDrivingLicenseApplicationInfo1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ucDrivingLicenseApplicationInfo1.Location = new System.Drawing.Point(4, 154);
             this.ucDrivingLicenseApplicationInfo1.Name = "ucDrivingLicenseApplicationInfo1";
             this.ucDrivingLicenseApplicationInfo1.Size = new System.Drawing.Size(943, 334);
@@ -268,6 +269,7 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(146, 42);
             this.guna2GradientButton1.TabIndex = 40;
             this.guna2GradientButton1.Text = "Close";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmTestAppointments
             // 

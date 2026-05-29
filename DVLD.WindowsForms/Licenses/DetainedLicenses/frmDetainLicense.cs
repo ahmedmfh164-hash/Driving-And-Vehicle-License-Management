@@ -17,13 +17,14 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private clsLicenseBusiness _License;
         private int _DetainLicenseID;
         private int _LicenseID;
+        public EventHandler DetainLicense;
+
         public frmDetainLicense()
         {
             InitializeComponent();
         }
      
 
-    
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtbLicenseID.Text))
@@ -96,8 +97,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (_DetainLicenseID!=-1)
             {
                 MessageBox.Show("Licensed Detained Successfully with ID = "+_DetainLicenseID, "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 lblDetainID.Text=_DetainLicenseID.ToString();
+                DetainLicense?.Invoke(this, EventArgs.Empty);
                 llblShowLicenseInfo.Enabled=true;
                 gbFilter.Enabled=false;
                 btnDetain.Enabled=false;

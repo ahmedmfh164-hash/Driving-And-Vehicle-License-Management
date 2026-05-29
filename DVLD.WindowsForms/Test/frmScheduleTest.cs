@@ -3,15 +3,8 @@ using DVLD.Core;
 using DVLD.Domain;
 using Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static DVLD.Business.clsTestTypesBusiness;
 
 namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Test
 {
@@ -22,12 +15,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Test
         public enum enCreationMode { FirstTimeSchedule = 0, RetakeTestSchedule = 1 };
         private enCreationMode _CreationMode = enCreationMode.FirstTimeSchedule;
 
-
         private clsTestTypes.enTestType _TestTypeID = clsTestTypes.enTestType.VisionTest;
         private clsLocalDrivingLicenseApplicationBusiness _LocalDrivingLicenseApplication;
         private clsTestAppointmentBusiness _TestAppointment;
         private int _TestAppointmentID = -1;
         private int _DLAppID = -1;
+
+        public EventHandler SavedData;
 
         public frmScheduleTest(int DLAppID,clsTestTypes.enTestType testTypeID,int TestAppointmentID=-1)
         {
@@ -40,6 +34,39 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Test
                 _Mode = enMode.AddNew;
             else
                 _Mode = enMode.Update;
+
+        }
+
+        private void _RetakeTestSchedule()
+        {
+            if (_CreationMode == enCreationMode.RetakeTestSchedule)
+            {
+                lblRAppFees.Text = clsApplicationTypesBusiness.FindApplicationTypeByApplicationTypeID
+                    ((int)clsApplicationBusiness.enApplicationType.RetakeTest).ApplicationFees.ToString();
+                gbRetakeTestInfo.Enabled = true;
+                lblTitle.Text = "Schedule Retake Test";
+                lblTitle.Location=new Point(150, 115);
+                lblTitle.AutoSize=false;
+                lblTitle.Size=new Size(400, 45);
+            }
+            else
+            {
+                gbRetakeTestInfo.Enabled = false;
+                lblTitle.Text = "Schedule Test";
+                lblRAppFees.Text = "0";
+            }
+
+        }
+
+        private void _FillLabels()
+        {
+            lblRTestAppID.Text = "N/A";
+
+            lblDLAppID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
+            lblDClass.Text = _LocalDrivingLicenseApplication.LicenseClass.ClassName;
+            lblName.Text = _LocalDrivingLicenseApplication.ApplicantFullName;
+
+            lblTrial.Text = _LocalDrivingLicenseApplication.TotalTrialsPerTest(_TestTypeID).ToString();
 
         }
 
@@ -62,31 +89,9 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Test
             else
                 _CreationMode = enCreationMode.FirstTimeSchedule;
 
-
-            if (_CreationMode == enCreationMode.RetakeTestSchedule)
-            {
-                lblRAppFees.Text = clsApplicationTypesBusiness.FindApplicationTypeByApplicationTypeID
-                    ((int)clsApplicationBusiness.enApplicationType.RetakeTest).ApplicationFees.ToString();
-               gbRetakeTestInfo .Enabled = true;
-                lblTitle.Text = "Schedule Retake Test";
-                lblTitle.Location=new Point(150, 115);
-                lblTitle.AutoSize=false;
-                lblTitle.Size=new Size(400, 45);
-            }
-            else
-            {
-                gbRetakeTestInfo.Enabled = false;
-                lblTitle.Text = "Schedule Test";
-                lblRAppFees.Text = "0";
-            }
-            lblRTestAppID.Text = "N/A";
-
-            lblDLAppID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
-            lblDClass.Text = _LocalDrivingLicenseApplication.LicenseClass.ClassName;
-            lblName.Text = _LocalDrivingLicenseApplication.ApplicantFullName;
-
-            lblTrial.Text = _LocalDrivingLicenseApplication.TotalTrialsPerTest(_TestTypeID).ToString();
-
+            _RetakeTestSchedule();
+            
+              _FillLabels();
 
             if (_Mode==enMode.AddNew)
             {
@@ -337,7 +342,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Test
             {
                 _Mode = enMode.Update;
                 MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                 SavedData?.Invoke(this,EventArgs.Empty);
             }
             else
                 MessageBox.Show("Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -345,5 +350,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Test
 
             Close();
         }
+
     }
+
 }

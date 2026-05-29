@@ -1,13 +1,6 @@
 ﻿using DVLD.Business;
 using DVLD.Core;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
@@ -16,6 +9,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
     {
        private clsLocalDrivingLicenseApplicationBusiness _LDLApp;
         private int _DLAppID;
+        public EventHandler IssuedLicense;
+
         public frmIssueDrivingLicenseForTheFirstTime(int DLAppID)
         {
             InitializeComponent();
@@ -70,10 +65,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             int LicenseID=_LDLApp.IssueLicenseForTheFirstTime(txtbNotes.Text, clsUserInfo.UserID);
 
-              if (LicenseID!=-1)
-                  MessageBox.Show("Data Saved Successfully with License ID = "+LicenseID, "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-              else          
-                  MessageBox.Show("Data Is not Saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (LicenseID!=-1)
+            {
+                MessageBox.Show("Data Saved Successfully with License ID = "+LicenseID, "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                IssuedLicense?.Invoke(this,EventArgs.Empty);
+            }
+            else
+                MessageBox.Show("Data Is not Saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
   
 
         }

@@ -60,8 +60,15 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void editApplicationTypeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUpdateApplicationType frm=new frmUpdateApplicationType((int)dgvApplicationTypes.CurrentRow.Cells[0].Value);
+            frm.SavedChanging+=UpdateData;
             frm.ShowDialog();
+            
+        }
+
+        private void UpdateData(object  sender, EventArgs e)
+        {
             _RefreshData();
         }
+
     }
 }

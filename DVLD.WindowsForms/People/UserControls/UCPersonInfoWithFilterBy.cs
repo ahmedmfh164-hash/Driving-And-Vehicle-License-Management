@@ -28,22 +28,6 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             InitializeComponent();
         }
 
-        public int GetPersonID
-        {
-            get { return _PersonID; }
-        }
-
-        public void LoadData(int PersonID)
-        {
-            _PersonID = PersonID;
-
-            cbFilterBy.SelectedIndex=cbFilterBy.FindString("Person ID");
-            txtFilterBy.Visible=true;
-            txtFilterBy.Text=_PersonID.ToString();
-            ucPersonInfo2.GetPersonID(_PersonID);
-            gbFilter.Visible=false;
-        }
-
         private void _RefreshUsers()
         {
             cbFilterBy.SelectedIndex=0;
@@ -93,7 +77,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 return;
             }
 
-            if (cbFilterBy.Text == "Person ID")
+            if (Column == "PersonID")
             {
                 if (int.TryParse(Value, out int PersonID))
                 {
@@ -103,13 +87,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             }
             else
             {
-                if (cbFilterBy.Text == "National No")
+                if (Column == "NationalNo")
                     _NationalNo=Value;
 
-                if (cbFilterBy.Text == "Phone")
+                if (Column == "Phone")
                     _Phone=Value;
 
-                if (cbFilterBy.Text == "Email")
+                if (Column == "Email")
                     _Email=Value;
 
             }
@@ -209,6 +193,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
 
             }
+
 
             _PersonID=ucPersonInfo2.ReceivePersonID;
 

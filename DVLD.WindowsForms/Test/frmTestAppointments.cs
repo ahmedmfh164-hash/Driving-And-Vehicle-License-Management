@@ -75,6 +75,11 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             Close();
         }
 
+        private void UpdateData(object sender, EventArgs e)
+        {
+            _RefreshData();
+        }
+
         private void _AddEditTestAppointment()
         {
             if (License.IsThereAnActiveScheduledTest(_TestTypeID))
@@ -88,6 +93,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (LastTest == null)
             {
                 frmScheduleTest frm1 = new frmScheduleTest(_DLAppID, _TestTypeID);
+                frm1.SavedData+=UpdateData;
                 frm1.ShowDialog();
                 return;
             }
@@ -99,6 +105,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             }
 
             frmScheduleTest frm2 = new frmScheduleTest(_DLAppID, _TestTypeID);
+            frm2.SavedData+=UpdateData;
             frm2.ShowDialog();
 
         }
@@ -106,22 +113,21 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void btnAddTest_Click(object sender, EventArgs e)
         {
             _AddEditTestAppointment();
-            _RefreshData();
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmScheduleTest frm = new frmScheduleTest(_DLAppID, _TestTypeID, (int)dgvAppointments.CurrentRow.Cells[0].Value);
+            frm.SavedData+=UpdateData;
             frm.ShowDialog();
 
-            _RefreshData();
         }
 
         private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmTakeTest frm= new frmTakeTest(_DLAppID, _TestTypeID, (int)dgvAppointments.CurrentRow.Cells[0].Value);
+             frm.SavedData +=UpdateData;
             frm.ShowDialog();
-            _RefreshData();
         }
     }
 }

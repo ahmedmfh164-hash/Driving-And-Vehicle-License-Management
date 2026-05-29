@@ -9,38 +9,38 @@ namespace DVLD.Business
 
         public clsUserBusiness()
         {
-            this._UserID=-1;
-            this._PersonID=-1;
-            this._FullName="";
-            this._UserName="";
-            this._Password="";
-            this._IsActive=false;
+            this.UserID=-1;
+            this.PersonID=-1;
+            this.FullName="";
+            this.UserName="";
+            this.Password="";
+            this.IsActive=false;
 
-            _Mode=enMode.AddNew;
+            Mode=enMode.AddNew;
         }
 
         public clsUserBusiness(int UserID, string UserName, string Password, int PersonID, string FullName, bool IsActive)
         {
-                  _UserID = UserID;
-            _UserName = UserName;
-            _Password = Password;
-            _PersonID = PersonID;
-            _FullName = FullName;
-            _IsActive = IsActive;
+            base.UserID = UserID;
+            base.UserName = UserName;
+            base.Password = Password;
+            base.PersonID = PersonID;
+            base.FullName = FullName;
+            base.IsActive = IsActive;
 
-            _Mode= enMode.Update;
+            Mode= enMode.Update;
         }
 
 
         private bool _AddNewUser()
         {
-            this._UserID=clsUserAccess.AddNewUser( this._PersonID, this._UserName, this._Password, this._IsActive);
-            return (this._UserID!=-1);
+            this.UserID=clsUserAccess.AddNewUser( this.PersonID, this.UserName, this.Password, this.IsActive);
+            return (this.UserID!=-1);
         }
 
         private bool _UpdateUser()
         {
-            return clsUserAccess.UpdateUser(this._UserID,this._FullName, this._PersonID, this._UserName, this._Password, this._IsActive);
+            return clsUserAccess.UpdateUser(this.UserID,this.FullName, this.PersonID, this.UserName, this.Password, this.IsActive);
         }
 
 
@@ -129,18 +129,18 @@ namespace DVLD.Business
 
         public bool Save()
         {
-            switch (_Mode)
+            switch (Mode)
             {
                 case enMode.AddNew:
                     if (_AddNewUser())
                     {
-                        _Mode=enMode.Update;
+                        Mode=enMode.Update;
                         return true;
                     }
                     break;
                 case enMode.Update:
                     return _UpdateUser();
-                    break;
+                   
 
             }
 

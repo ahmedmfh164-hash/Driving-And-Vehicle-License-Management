@@ -1,4 +1,5 @@
 ﻿using DVLD.Business;
+using DVLD.Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +14,6 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 {
     public partial class frmManageUser : Form
     {
-
-        clsUserBusiness _User;
         int _UserID;
         public frmManageUser()
         {
@@ -44,8 +43,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             }
 
-               if(cbFilterBy.SelectedIndex!=5)
-            cbFilterBy.SelectedIndex=cbFilterBy.FindString("None");
+            if (cbFilterBy.SelectedIndex!=5)
+                cbFilterBy.SelectedIndex=0;
 
             lblCountRecords.Text=dgvUsers.Rows.Count.ToString();
 
@@ -64,8 +63,9 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void btnAddNewUser_Click(object sender, EventArgs e)
         {
             frmAddEditUser frm = new frmAddEditUser();
+            frm.SavedUser+=frmManageUser_Load;
             frm.ShowDialog();
-            _RefreshUsers();
+            
         }
 
         private void dgvUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -84,13 +84,14 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAddEditUser frm = new frmAddEditUser();
+            frm.SavedUser+=frmManageUser_Load;
             frm.ShowDialog();
-            _RefreshUsers();
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAddEditUser frm = new frmAddEditUser((int)dgvUsers.CurrentRow.Cells[0].Value);
+            frm.SavedUser+=frmManageUser_Load;
             frm.ShowDialog();
         }
 
@@ -98,7 +99,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         {
             _UserID=(int)dgvUsers.CurrentRow.Cells[0].Value;
 
-            if (clsUserBusiness.IsUserExistByUserID(_UserID)&&(Properties.Settings.Default.UserName!=dgvUsers.CurrentRow.Cells[3].Value.ToString()))
+            if (_UserID!=clsUserInfo.UserID&&(clsUserInfo.Username!=dgvUsers.CurrentRow.Cells[3].Value.ToString()))
             {
                 if (MessageBox.Show("Are you sure want to delete  user ["+_UserID+"]", "Confirm!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)==DialogResult.OK)
                 {

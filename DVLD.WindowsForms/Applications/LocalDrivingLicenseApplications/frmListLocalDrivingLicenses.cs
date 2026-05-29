@@ -17,7 +17,6 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
     {
         DataTable _dtAllLocalDrivingLicense;
         private clsLocalDrivingLicenseApplicationBusiness _LDApp;
-        bool IsIssue = false;
         public frmListLocalDrivingLicenses()
         {
             InitializeComponent();
@@ -52,13 +51,10 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 dgvLocalDrivingLicenseApplication.Columns[6].HeaderText="Status";
                 dgvLocalDrivingLicenseApplication.Columns[6].Width = 70;
 
-
             }
 
             cbFilterBy.SelectedIndex=cbFilterBy.FindString("None");
             lblCountRecords.Text=dgvLocalDrivingLicenseApplication.Rows.Count.ToString();
-
-
 
         }
 
@@ -202,8 +198,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void btnAddNewPerson_Click(object sender, EventArgs e)
         {
             frmAddEditLocalDrivingLicenseApplications frm = new frmAddEditLocalDrivingLicenseApplications();
+            frm.SavedApplication+=UpdateData;
             frm.ShowDialog();
-            _RefreshLocalDrivingLicense();
 
         }
 
@@ -338,8 +334,9 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void editApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-
+            frmAddEditLocalDrivingLicenseApplications frm = new frmAddEditLocalDrivingLicenseApplications((int)dgvLocalDrivingLicenseApplication.CurrentRow.Cells[0].Value);
+            frm.SavedApplication+=UpdateData;
+            frm.ShowDialog();
         }
 
         private void deleteApplicationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -366,7 +363,6 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             _RefreshLocalDrivingLicense();
 
 
-
         }
 
         private void ScehedueTestsToolMenue_Click(object sender, EventArgs e)
@@ -378,12 +374,15 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void issueDrivingLicenseFirstTimeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmIssueDrivingLicenseForTheFirstTime frm = new frmIssueDrivingLicenseForTheFirstTime((int)dgvLocalDrivingLicenseApplication.CurrentRow.Cells[0].Value);
+            frm.IssuedLicense+=UpdateData;
             frm.ShowDialog();
-            IsIssue=true;
+
+        }
+
+        private void UpdateData(object sender, EventArgs e)
+        {
             _RefreshLocalDrivingLicense();
-
-        }                       
-
+        }
 
         private void showLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {

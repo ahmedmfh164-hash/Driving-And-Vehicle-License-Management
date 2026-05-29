@@ -18,7 +18,6 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private int _PersonID;
 
-
         public frmAddEditPerson()
         {
             InitializeComponent();

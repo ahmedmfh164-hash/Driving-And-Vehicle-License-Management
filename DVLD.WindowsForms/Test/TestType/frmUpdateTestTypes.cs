@@ -1,4 +1,5 @@
 ﻿using DVLD.Business;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
     {
         int _ID;
         clsTestTypesBusiness _TestType;
+        public EventHandler SavedChanging;
+
         public frmUpdateTestTypes(int ID)
         {
             InitializeComponent();
@@ -40,10 +43,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (_TestType.Save())
             {
                 MessageBox.Show("Data saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                SavedChanging?.Invoke(this, EventArgs.Empty);
+
             }
             else
                 MessageBox.Show("Error: Data is not saved successfully!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -53,7 +59,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void ValidateEmptyTextBox(object sender, CancelEventArgs e)
         {
-            TextBox Temp = (TextBox)sender;
+            Guna2TextBox Temp = (Guna2TextBox)sender;
 
             if (string.IsNullOrEmpty(Temp.Text.Trim()))
             {
@@ -66,7 +72,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void txbMoney_KeyPress(object sender, KeyPressEventArgs e)
         {
-            TextBox txt = (TextBox)sender;
+            Guna2TextBox txt = (Guna2TextBox)sender;
 
             if (!char.IsDigit(e.KeyChar) &&
                 e.KeyChar != '.' &&

@@ -75,18 +75,23 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             Close();
         }
 
+        private void UpdateData(object sender, EventArgs e)
+        {
+            _RefreshDetainedLicenses();
+        }
+
         private void btnDetainLicense_Click(object sender, EventArgs e)
         {
             frmDetainLicense frm = new frmDetainLicense();
+            frm.DetainLicense+=UpdateData;
             frm.ShowDialog();
-            _RefreshDetainedLicenses();
         }
 
         private void btnRelease_Click(object sender, EventArgs e)
         {
             frmReleaseDetainedLicense frm=new frmReleaseDetainedLicense();
+            frm.ReleasedDetain+=UpdateData;
             frm.ShowDialog();
-            _RefreshDetainedLicenses();
         }
 
         private void PersonDetailsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -117,8 +122,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void releaseDetainedLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense((int)dgvDetainedLicenses.CurrentRow.Cells[1].Value);
+            frm.ReleasedDetain+=UpdateData;
             frm.ShowDialog();
-            _RefreshDetainedLicenses();
         }
 
         private void dgvDetainedLicenses_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)

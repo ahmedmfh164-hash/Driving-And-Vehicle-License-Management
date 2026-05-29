@@ -56,11 +56,8 @@ namespace DVLD.Business
 
         private bool _UpdateLocalDrivingLicenseApplication()
         {
-
-            return clsLocalDrivingLicensesAccess.UpdateLocalDrivingLicenseApplication
-                (
+            return clsLocalDrivingLicensesAccess.UpdateLocalDrivingLicenseApplication(
                 this.LocalDrivingLicenseApplicationID, this.ApplicationID, this.LicenseClassID);
-
         }
 
         public static clsLocalDrivingLicenseApplicationBusiness FindByLocalDrivingAppLicenseID(int LocalDrivingLicenseApplicationID)
@@ -153,10 +150,9 @@ namespace DVLD.Business
                         return false;
 
                 case enMode.Update:
+                    return _UpdateLocalDrivingLicenseApplication();
 
-                            return _UpdateLocalDrivingLicenseApplication();
-
-                        }
+            }
 
             return false;
         }

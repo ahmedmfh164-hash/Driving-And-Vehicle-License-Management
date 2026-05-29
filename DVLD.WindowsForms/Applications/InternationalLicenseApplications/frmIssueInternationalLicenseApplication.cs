@@ -17,6 +17,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
        private clsInternationalBusiness _IntLicense;
        private clsLicenseBusiness _License;
         private int _LicenseID;
+        public EventHandler IssuedLicense;
         public frmIssueInternationalLicenseApplication()
         {
             InitializeComponent();
@@ -100,6 +101,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             {
                 MessageBox.Show("Data Saved Successfully with InterNational License ID = "+_IntLicense.InterNationalLicenseID, "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ucNewInterNationalLicense1.GetApplicationIDAndIntLicenseID(_IntLicense.InterNationalLicenseID,_IntLicense.ApplicationID);
+                 IssuedLicense?.Invoke(this,EventArgs.Empty);
                 llblShowLicenseInfo.Enabled=true;
                 gbFilter.Enabled=false;
                 btnIssue.Enabled=false;

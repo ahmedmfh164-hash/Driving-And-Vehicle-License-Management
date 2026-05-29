@@ -21,7 +21,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
        private int _LDLAppID;
        private clsLicenseClassBusiness _LicenseClass;
         private int _PersonID;
-
+        public EventHandler SavedApplication;
         public frmAddEditLocalDrivingLicenseApplications(int LDLAppID)
         {
             InitializeComponent(); 
@@ -60,12 +60,11 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             cbLicenseCLass.SelectedIndex=cbLicenseCLass.FindString(_LDLApp.LicenseClass.ClassName.ToString());
 
-
+            _PersonID=_LDLApp.ApplicantPersonID;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            _PersonID = ucPersonInfoWithFilterBy1.GetPersonID;
             if (_PersonID<=0)
             {
                 MessageBox.Show("Cannot go to next step before selecting person. ", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -111,20 +110,17 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             _LDLApp.PaidFees = Convert.ToDouble(lblFees.Text);
             _LDLApp.LicenseClassID= LicenseClassID;
             _LDLApp.ApplicationDate=DateTime.Now;
-
             _LDLApp.CreatedByUserID=clsUserInfo.UserID;
 
-          
             if (_LDLApp.SaveLDLApp())
             {
                 MessageBox.Show("Data Saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                SavedApplication?.Invoke(this, EventArgs.Empty);
                 lblDLApplicationID.Text=_LDLApp.LocalDrivingLicenseApplicationID.ToString();
                 _Mode=enMode.eUpdate;
             }
             else
                 MessageBox.Show("Data doesn't Saved.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
 
         }
 
@@ -161,6 +157,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             {
                 e.Cancel = true;
             }
+        }
+
+        private int ucPersonInfoWithFilterBy1_OnSearchClick(int arg)
+        {
+            _PersonID=arg;
+
+            return 1;
         }
     }
 }

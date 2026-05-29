@@ -91,9 +91,14 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void btnIssueInternationalLicense_Click(object sender, EventArgs e)
         {
             frmIssueInternationalLicenseApplication frm = new frmIssueInternationalLicenseApplication();
+            frm.IssuedLicense+=UpdateData;
             frm.ShowDialog();
-           _RefreshData();
 
+        }
+
+        private void UpdateData(object sender, EventArgs e)
+        {
+            _RefreshData();
         }
 
         private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)

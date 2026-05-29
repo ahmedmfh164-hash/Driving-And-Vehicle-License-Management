@@ -33,7 +33,16 @@
             this.lblMode = new System.Windows.Forms.Label();
             this.tcAddUser = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpPersonalInfo = new System.Windows.Forms.TabPage();
+            this.ucPersonInfoWithFilterBy = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCPersonInfoWithFilterBy();
+            this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tpLoginInfo = new System.Windows.Forms.TabPage();
+            this.btnShowConfirmPassword = new System.Windows.Forms.Button();
+            this.btnShowPassword = new System.Windows.Forms.Button();
+            this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ckIsActive = new System.Windows.Forms.CheckBox();
             this.lblUserID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,25 +55,16 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnShowConfirmPassword = new System.Windows.Forms.Button();
-            this.btnShowPassword = new System.Windows.Forms.Button();
-            this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ucPersonInfoWithFilterBy = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCPersonInfoWithFilterBy();
             this.ucPersonInfoWithFilterBy2 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCPersonInfoWithFilterBy();
             this.ucPersonInfoWithFilterBy1 = new Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.UCPersonInfoWithFilterBy();
             this.tcAddUser.SuspendLayout();
             this.tpPersonalInfo.SuspendLayout();
             this.tpLoginInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMode
@@ -120,6 +120,36 @@
             this.tpPersonalInfo.TabIndex = 0;
             this.tpPersonalInfo.Text = "Personal Info";
             // 
+            // ucPersonInfoWithFilterBy
+            // 
+            this.ucPersonInfoWithFilterBy.BackColor = System.Drawing.Color.Teal;
+            this.ucPersonInfoWithFilterBy.Location = new System.Drawing.Point(-1, -1);
+            this.ucPersonInfoWithFilterBy.Name = "ucPersonInfoWithFilterBy";
+            this.ucPersonInfoWithFilterBy.Size = new System.Drawing.Size(987, 410);
+            this.ucPersonInfoWithFilterBy.TabIndex = 24;
+            this.ucPersonInfoWithFilterBy.OnSearchClick += new System.Func<int, int>(this.ucPersonInfoWithFilterBy3_OnSearchClick);
+            // 
+            // btnNext
+            // 
+            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNext.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnNext.FillColor2 = System.Drawing.Color.IndianRed;
+            this.btnNext.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.Blue;
+            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
+            this.btnNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnNext.ImageSize = new System.Drawing.Size(28, 28);
+            this.btnNext.Location = new System.Drawing.Point(831, 415);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(146, 35);
+            this.btnNext.TabIndex = 23;
+            this.btnNext.Text = "Next";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
             // tpLoginInfo
             // 
             this.tpLoginInfo.BackColor = System.Drawing.Color.Teal;
@@ -146,6 +176,95 @@
             this.tpLoginInfo.Size = new System.Drawing.Size(987, 455);
             this.tpLoginInfo.TabIndex = 1;
             this.tpLoginInfo.Text = "Login Info";
+            // 
+            // btnShowConfirmPassword
+            // 
+            this.btnShowConfirmPassword.BackColor = System.Drawing.Color.Teal;
+            this.btnShowConfirmPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowConfirmPassword.BackgroundImage")));
+            this.btnShowConfirmPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShowConfirmPassword.FlatAppearance.BorderSize = 0;
+            this.btnShowConfirmPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowConfirmPassword.Location = new System.Drawing.Point(460, 204);
+            this.btnShowConfirmPassword.Name = "btnShowConfirmPassword";
+            this.btnShowConfirmPassword.Size = new System.Drawing.Size(38, 29);
+            this.btnShowConfirmPassword.TabIndex = 33;
+            this.btnShowConfirmPassword.UseVisualStyleBackColor = false;
+            this.btnShowConfirmPassword.Click += new System.EventHandler(this.btnShowConfirmPassword_Click);
+            // 
+            // btnShowPassword
+            // 
+            this.btnShowPassword.BackColor = System.Drawing.Color.Teal;
+            this.btnShowPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowPassword.BackgroundImage")));
+            this.btnShowPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShowPassword.FlatAppearance.BorderSize = 0;
+            this.btnShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowPassword.Location = new System.Drawing.Point(459, 158);
+            this.btnShowPassword.Name = "btnShowPassword";
+            this.btnShowPassword.Size = new System.Drawing.Size(38, 29);
+            this.btnShowPassword.TabIndex = 32;
+            this.btnShowPassword.UseVisualStyleBackColor = false;
+            this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnBack.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.Blue;
+            this.btnBack.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Prev_32;
+            this.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBack.ImageSize = new System.Drawing.Size(28, 28);
+            this.btnBack.Location = new System.Drawing.Point(830, 414);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(146, 35);
+            this.btnBack.TabIndex = 27;
+            this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
+            this.pictureBox4.Location = new System.Drawing.Point(195, 204);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 28);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
+            this.pictureBox3.Location = new System.Drawing.Point(197, 155);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(41, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.aa;
+            this.pictureBox2.Location = new System.Drawing.Point(198, 106);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 31);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(201, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // ckIsActive
             // 
@@ -332,125 +451,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnNext
-            // 
-            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNext.FillColor = System.Drawing.Color.MidnightBlue;
-            this.btnNext.FillColor2 = System.Drawing.Color.IndianRed;
-            this.btnNext.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.Blue;
-            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
-            this.btnNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnNext.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnNext.Location = new System.Drawing.Point(831, 415);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(146, 35);
-            this.btnNext.TabIndex = 23;
-            this.btnNext.Text = "Next";
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnShowConfirmPassword
-            // 
-            this.btnShowConfirmPassword.BackColor = System.Drawing.SystemColors.Control;
-            this.btnShowConfirmPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowConfirmPassword.BackgroundImage")));
-            this.btnShowConfirmPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnShowConfirmPassword.FlatAppearance.BorderSize = 0;
-            this.btnShowConfirmPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowConfirmPassword.Location = new System.Drawing.Point(460, 204);
-            this.btnShowConfirmPassword.Name = "btnShowConfirmPassword";
-            this.btnShowConfirmPassword.Size = new System.Drawing.Size(38, 29);
-            this.btnShowConfirmPassword.TabIndex = 33;
-            this.btnShowConfirmPassword.UseVisualStyleBackColor = false;
-            this.btnShowConfirmPassword.Click += new System.EventHandler(this.btnShowConfirmPassword_Click);
-            // 
-            // btnShowPassword
-            // 
-            this.btnShowPassword.BackColor = System.Drawing.SystemColors.Control;
-            this.btnShowPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowPassword.BackgroundImage")));
-            this.btnShowPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnShowPassword.FlatAppearance.BorderSize = 0;
-            this.btnShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowPassword.Location = new System.Drawing.Point(459, 158);
-            this.btnShowPassword.Name = "btnShowPassword";
-            this.btnShowPassword.Size = new System.Drawing.Size(38, 29);
-            this.btnShowPassword.TabIndex = 32;
-            this.btnShowPassword.UseVisualStyleBackColor = false;
-            this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBack.FillColor = System.Drawing.Color.SeaGreen;
-            this.btnBack.FillColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.Blue;
-            this.btnBack.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.Prev_32;
-            this.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBack.ImageSize = new System.Drawing.Size(28, 28);
-            this.btnBack.Location = new System.Drawing.Point(830, 414);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(146, 35);
-            this.btnBack.TabIndex = 27;
-            this.btnBack.Text = "Back";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
-            this.pictureBox4.Location = new System.Drawing.Point(195, 204);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(44, 28);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.SPassword;
-            this.pictureBox3.Location = new System.Drawing.Point(197, 155);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(41, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_.Properties.Resources.aa;
-            this.pictureBox2.Location = new System.Drawing.Point(198, 106);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(201, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ucPersonInfoWithFilterBy
-            // 
-            this.ucPersonInfoWithFilterBy.BackColor = System.Drawing.Color.Teal;
-            this.ucPersonInfoWithFilterBy.Location = new System.Drawing.Point(-1, -1);
-            this.ucPersonInfoWithFilterBy.Name = "ucPersonInfoWithFilterBy";
-            this.ucPersonInfoWithFilterBy.Size = new System.Drawing.Size(987, 410);
-            this.ucPersonInfoWithFilterBy.TabIndex = 24;
-            this.ucPersonInfoWithFilterBy.OnSearchClick += new System.Func<int, int>(this.ucPersonInfoWithFilterBy3_OnSearchClick);
-            // 
             // ucPersonInfoWithFilterBy2
             // 
             this.ucPersonInfoWithFilterBy2.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -486,11 +486,11 @@
             this.tpPersonalInfo.ResumeLayout(false);
             this.tpLoginInfo.ResumeLayout(false);
             this.tpLoginInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

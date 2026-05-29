@@ -59,7 +59,12 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void editTestTypeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUpdateTestTypes frm = new frmUpdateTestTypes((int)dgvTestTypes.CurrentRow.Cells[0].Value);
+            frm.SavedChanging+=UpdateData;
             frm.ShowDialog();
+        }
+
+        private void UpdateData(object sender, EventArgs e)
+        {
             _RefreshData();
         }
 

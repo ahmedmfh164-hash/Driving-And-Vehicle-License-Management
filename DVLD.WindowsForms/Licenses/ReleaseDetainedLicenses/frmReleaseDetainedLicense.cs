@@ -17,7 +17,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private clsLicenseBusiness _License;
         private int _ReleasedApplicationID;
         private int _LicenseID;
-
+        public EventHandler ReleasedDetain;
         public frmReleaseDetainedLicense()
         {
             InitializeComponent();
@@ -119,6 +119,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 MessageBox.Show("Detained Licensed Released Successfully.", "Detained License Released", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 lblApplicationID.Text = _ReleasedApplicationID.ToString();
+                ReleasedDetain?.Invoke(this, EventArgs.Empty);
                 llblShowLicenseInfo.Enabled=true;
                 gbFilter.Enabled=false;
                 btnRelease.Enabled=false;

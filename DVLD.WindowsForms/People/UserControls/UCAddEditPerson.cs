@@ -275,17 +275,16 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (_Person.Save())
             {
                 MessageBox.Show("Person saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _Mode=enMode.Update;
+
+                _PersonID=_Person._PersonID;
+
+                /*if (OnSaveComplete != null)
+                    SavingComplete(_PersonID);*/
+                OnSaveComplete?.Invoke(_PersonID);
             }
             else
                 MessageBox.Show("Error: Data is not saved successfully!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            _Mode=enMode.Update;
-
-            _PersonID=_Person._PersonID;
-
-            /*if (OnSaveComplete != null)
-                SavingComplete(_PersonID);*/
-            OnSaveComplete?.Invoke(_PersonID);
 
             OnCloseClick?.Invoke();
         }

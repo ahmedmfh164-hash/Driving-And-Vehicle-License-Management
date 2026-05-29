@@ -309,6 +309,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             Form frm = new frmAddEditPerson(PersonID);
             frm.ShowDialog();
             _RefreshPeople();
+            
         }
 
 

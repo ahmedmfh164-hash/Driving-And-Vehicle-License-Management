@@ -21,6 +21,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
        private clsUserBusiness _User;
        private int _UserID;
         private int _PersonID;
+        public EventHandler SavedUser;
+
         public frmAddEditUser(int UserID)
         {
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         {                     
             InitializeComponent();
             _UserID = -1;
+            btnSave.Visible=false;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -46,7 +49,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             else
             {
                 tcAddUser.SelectedIndex=1;
-                btnSave.Enabled=true;
+                btnSave.Visible=true;
             }
         }
 
@@ -65,20 +68,20 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             lblMode.Text="Update Data";
             lblUserID.Text=_UserID.ToString();
-            tbUserName.Text=_User._UserName;
-            tbPassword.Text=_User._Password.ToString();
+            tbUserName.Text=_User.UserName;
+            tbPassword.Text=_User.Password.ToString();
             tbConfirmPassword.Text=tbPassword.Text;
-            ckIsActive.Checked=_User._IsActive;
+            ckIsActive.Checked=_User.IsActive;
 
 
         }
 
         private void SaveDataToObject()
         {
-            _User._PersonID=ucPersonInfoWithFilterBy1.GetPersonID;
-            _User._UserName=tbUserName.Text;
-            _User._Password=tbPassword.Text;
-            _User._IsActive=ckIsActive.Checked;
+            _User.PersonID=_PersonID;
+            _User.UserName=tbUserName.Text;
+            _User.Password=tbPassword.Text;
+            _User.IsActive=ckIsActive.Checked;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -91,18 +94,19 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             }
 
 
-            if (_User._UserName!=tbUserName.Text&&clsUserBusiness.IsUserExistByUserName(tbUserName.Text))
+            if (_User.UserName!=tbUserName.Text&&clsUserBusiness.IsUserExistByUserName(tbUserName.Text))
             {
                 MessageBox.Show("User Name is found!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-                    SaveDataToObject();
+            SaveDataToObject();
 
-            if(_User.Save())
-            {
+            if (_User.Save())                     
+            {                                     
                 MessageBox.Show("User Saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                lblUserID.Text=_User._UserID.ToString();
+                lblUserID.Text=_User.UserID.ToString();
+                SavedUser?.Invoke(this,EventArgs.Empty);
                 _Mode=enMode.eUpdate;
             }
             else
@@ -179,7 +183,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             if (!string.IsNullOrEmpty(tbConfirmPassword.Text)&&tbConfirmPassword.Text!=tbPassword.Text)
                 errorProvider1.SetError(tbConfirmPassword, "Password Confirmation doesn't match the password!");
-            else
+
+            if (string.IsNullOrEmpty(tbConfirmPassword.Text) )
                 errorProvider1.SetError(tbConfirmPassword, "This Field required!");
         }
 
@@ -194,12 +199,12 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
             if (txtb.UseSystemPasswordChar)
             {
                 txtb.UseSystemPasswordChar=false;
-                btn.BackgroundImage=Resources.DisableShowTral2;
+                btn.BackgroundImage=Resources.DisableShowIcon;
             }
             else
             {
                 txtb.UseSystemPasswordChar=true;
-                btn.BackgroundImage=Resources.EnableShowTeal1;
+                btn.BackgroundImage=Resources.EnableShowIcon_jpeg;
 
             }
         }

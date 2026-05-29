@@ -42,13 +42,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 return;
             }
 
-            ucPersonInfo1.GetPersonID(_User._PersonID);
+            ucPersonInfo1.GetPersonID(_User.PersonID);
             ucPersonInfo1.LoadData();
 
             lblUserID.Text = _UserID.ToString();
-            lblUserName.Text=_User._UserName;
+            lblUserName.Text=_User.UserName;
 
-            if (_User._IsActive==true)
+            if (_User.IsActive==true)
                 lblIsActive.Text = "Yes";
             else
                 lblIsActive.Text="No";

@@ -68,11 +68,11 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 return;
             }
 
-            _User._Password=tbPassword.Text;
+            _User.Password=tbPassword.Text;
 
             if (_User.Save())
             {
-                MessageBox.Show("Password Changed successfully.\nUserName: "+_User._UserName, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Password Changed successfully.\nUserName: "+_User.UserName, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
                 MessageBox.Show("Password doesn't Saved.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -81,7 +81,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
         private void tbCurrentPassword_Validating(object sender, CancelEventArgs e)
         {
-            if (!string.IsNullOrEmpty(tbCurrentPassword.Text)&&(clsUserBusiness.FindUserByUserID(_UserID))._Password!=tbCurrentPassword.Text)
+            if (!string.IsNullOrEmpty(tbCurrentPassword.Text)&&(clsUserBusiness.FindUserByUserID(_UserID)).Password!=tbCurrentPassword.Text)
             {
                 errorProvider1.SetError(tbCurrentPassword, "Current Password is wrong!");
                 e.Cancel = true;

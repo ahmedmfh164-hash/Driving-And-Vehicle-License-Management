@@ -67,7 +67,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private void _SaveLoginData()
         {
                 clsUserInfo.SaveLoginData(tbUserName.Text.Trim(),tbPassword.Text.Trim(), ckRememberMe.Checked);
-            clsUserInfo.UserID=_user._UserID;
+            clsUserInfo.UserID=_user.UserID;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -86,13 +86,13 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 return;
             }
 
-            if (!_user._IsActive)
+            if (!_user.IsActive)
             {
                 MessageBox.Show("Cannot this user enter the system!", "Wrong Credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (_user._Password!=tbPassword.Text)
+            if (_user.Password!=tbPassword.Text)
             {
                 MessageBox.Show("Invalid Username/Password!", "Wrong Credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -101,7 +101,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
 
             _SaveLoginData();
 
-            frmMain frm = new frmMain(_user._UserID);
+            frmMain frm = new frmMain(_user.UserID);
             frm.ShowDialog();
 
         }

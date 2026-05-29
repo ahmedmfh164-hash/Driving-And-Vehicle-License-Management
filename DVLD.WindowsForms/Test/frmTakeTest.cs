@@ -27,6 +27,8 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
         private clsTestAppointmentBusiness _TestAppointment;
         private int _TestAppointmentID = -1;
 
+        public EventHandler SavedData;
+
         public frmTakeTest(int LDLAppID,clsTestTypesBusiness.enTestType testTypeID, int TestAppointmentID = -1)
         {
             InitializeComponent();
@@ -111,7 +113,7 @@ namespace Full_Real_Project_DrivingAndVehicleLicenseDepartment_DVLD_
                 if (_Test.Save())
                 {
                     MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                   SavedData?.Invoke(this,EventArgs.Empty);
                 }
                 else
                     MessageBox.Show("Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
